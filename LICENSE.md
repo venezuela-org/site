@@ -8,5 +8,5 @@ The content of this repository (texts and the page) is under Creative Commons At
 - Con el apoyo de / Supported by: Creative Commons Venezuela — https://ve.creativecommons.net/
 - Licencia / License: https://creativecommons.org/licenses/by-sa/4.0/
 
-Las ilustraciones de la página son originales, hechas con asistencia de IA. No se usan imágenes de terceros.
-The page illustrations are original, made with AI assistance. No third-party images are used.
+Las ilustraciones vectoriales de la página son originales, hechas con asistencia de IA. La ilustración de la sección Apoyar es material de Creative Commons Venezuela, usado con su autorización.
+The page's vector illustrations are original, made with AI assistance. The illustration in the Support section is Creative Commons Venezuela material, used with permission.

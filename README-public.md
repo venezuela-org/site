@@ -14,4 +14,4 @@ La página lo dice de forma visible. Para una emergencia, usa los canales oficia
 
 ## Licencia
 
-Contenido bajo CC BY-SA 4.0. Conexión RedJIV, con el apoyo de Creative Commons Venezuela (https://ve.creativecommons.net/). Ilustraciones originales hechas con asistencia de IA, sin imágenes de terceros.
+Contenido bajo CC BY-SA 4.0. Conexión RedJIV, con el apoyo de Creative Commons Venezuela (https://ve.creativecommons.net/). Ilustraciones vectoriales originales con asistencia de IA; la ilustración de Apoyar es material de Creative Commons Venezuela.

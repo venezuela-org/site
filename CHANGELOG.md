@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.4 (referencias en terreno y cierre)
+
+- Canales establecidos con referencias específicas de Venezuela, verificadas: guía del CICR para afectados (con teléfonos de búsqueda de la Cruz Roja Venezolana), UNICEF LAC, OCHA Venezuela, ReliefWeb (página del desastre) y Cáritas Venezuela.
+- HOT (SOS Venezuela) añadido a los canales con acción inmediata (Tasking Manager y MapSwipe); el track A se redefine para construir sobre HOT, no duplicarlo.
+- Directorio privado ampliado con las iniciativas en curso detectadas (HOT, ve360_, Cáritas La Guaira, Medicina UCV, Cámara Suiza, Mundo UR) y sus implicaciones por track.
+- Diagramas del manual interno corregidos (tracks y ecosistema, sin superposiciones, líneas de borde a borde).
+- Ilustración de Creative Commons Venezuela integrada en la sección Apoyar, con crédito; nota de transparencia de IA ajustada para ser exacta.
+- Metadatos sociales corregidos al repositorio real (venezuela-org.github.io/site) usando la ilustración como vista previa.
+
 ## v1.3 (engagement y una sola identidad visual)
 
 - Página pública rediseñada para enganchar a estudiantes y académicos, con palancas honestas: identidad, concreción, autoría, entrada de baja fricción y prueba social real.
