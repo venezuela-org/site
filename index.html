@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Conexión RedJIV</title>
+<meta name="description" id="metaDesc" content="Red de jóvenes investigadores venezolanos que ayuda tras los terremotos del 24 de junio de 2026."/>
+<meta name="theme-color" content="#C6772A"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Conexión RedJIV"/>
+<meta property="og:description" content="Un hackathon de largo plazo para ayudar a Venezuela. Perfil bajo, resultados útiles."/>
+<meta property="og:url" content="https://venezuela-org.github.io/plan/"/>
+<meta property="og:image" content="https://venezuela-org.github.io/plan/img/portada.jpg"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Conexión RedJIV"/>
+<meta name="twitter:description" content="Un hackathon de largo plazo para ayudar a Venezuela. Perfil bajo, resultados útiles."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Spline+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --paper:#FBF6EE;--paper2:#F4ECE0;--ink:#241F19;--muted:#5A5344;--faint:#7A7260;--line:#E3D8C6;
+ --amber:#B26914;--amber-soft:#F3E0C8;--teal:#137563;--teal-soft:#D9EFE8;
+ --display:"Space Grotesk",-apple-system,system-ui,sans-serif;--body:"Spline Sans",-apple-system,system-ui,sans-serif;--mono:"Space Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.6;font-size:16.5px;overflow-x:hidden}
+a{color:var(--teal)}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--teal);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.mono{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-size:.64rem}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;position:fixed;z-index:200;background:var(--ink);color:#fff;padding:8px 12px;border-radius:8px}
+
+.top{position:sticky;top:0;z-index:60;background:rgba(251,246,238,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .in{max-width:1080px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:12px;position:relative}
+.brand{font-family:var(--display);font-weight:600;font-size:1rem;cursor:pointer;letter-spacing:-.01em;background:none;border:0;color:inherit}
+.brand .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--amber);margin-right:8px;vertical-align:middle}
+.sp{flex:1}
+.actions{display:flex;align-items:center;gap:8px}
+.tbtn{font-family:var(--mono);font-size:.62rem;letter-spacing:.09em;text-transform:uppercase;border:1px solid var(--line);background:rgba(255,255,255,.6);color:var(--muted);border-radius:999px;padding:8px 12px;cursor:pointer;transition:.15s;text-decoration:none;display:inline-block}
+.tbtn:hover{border-color:var(--amber);color:var(--ink)}
+.tbtn.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.tbtn.discord{border-color:var(--teal);color:var(--teal)}
+.tbtn.discord:hover{background:var(--teal);color:#fff}
+.lang{display:flex;gap:4px}
+.mnav{display:none;flex-direction:column;gap:2px;border-top:1px solid var(--line);margin-top:4px;padding-top:8px}
+.mnav a{padding:9px 8px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:.95rem}
+.mnav a:hover{background:var(--paper2);color:var(--ink)}
+.menu-btn{display:none}
+
+section{padding:44px 0}
+#situacion,#origen,#how,#principios,#arcband,#tracks,#ecosistema,#d30,#wont,#momo,#support,#reader{scroll-margin-top:64px}
+.stitle{font-family:var(--display);font-weight:700;font-size:clamp(1.55rem,4vw,2.3rem);letter-spacing:-.015em}
+.center{text-align:center}
+.ssub{color:var(--muted);margin-top:8px;max-width:52ch}
+.center .ssub{margin-left:auto;margin-right:auto}
+.slabel{font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--faint)}
+
+.hero{position:relative;overflow:hidden;padding:52px 0 36px}
+#field{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.75}
+.hero .glow{position:absolute;border-radius:50%;filter:blur(90px);z-index:0;opacity:.4;pointer-events:none}
+.hero .g1{width:340px;height:340px;background:var(--amber-soft);top:-120px;left:-60px}
+.hero .g2{width:380px;height:380px;background:var(--teal-soft);bottom:-160px;right:-70px}
+.hero .in{position:relative;z-index:2}
+.kicker{color:var(--amber);font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase}
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.05;letter-spacing:-.02em;margin:14px 0 0;max-width:18ch}
+.hero .sub{font-size:clamp(1rem,2.2vw,1.2rem);color:var(--muted);margin:16px 0 0;max-width:56ch}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.btn{font-family:var(--body);font-weight:600;font-size:.95rem;border-radius:999px;padding:12px 20px;cursor:pointer;text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink);transition:.15s}
+.btn:hover{border-color:var(--amber)}
+.btn.primary{background:var(--amber);color:#fff;border-color:var(--amber);box-shadow:0 8px 22px rgba(178,105,20,.22)}
+.btn.primary:hover{background:#98570f}
+.imgslot{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--paper2);margin:0}
+.imgslot img{width:100%;height:100%;display:none;object-fit:cover}
+.imgslot.has-photo img{display:block}
+.imgslot.has-photo .art{display:none}
+.imgslot .art{width:100%;height:100%}
+.imgslot .art svg{width:100%;height:100%;display:block}
+.hero-img{margin-top:28px;aspect-ratio:21/9}
+
+.snap{border:1px solid var(--line);border-left:4px solid var(--amber);background:#fff;border-radius:14px;padding:20px 22px}
+.snap .head{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between}
+.snap h2{font-family:var(--display);font-weight:600;font-size:1.2rem}
+.snap .asof{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.snap p{margin-top:10px;color:var(--ink)}
+.snap .warn{margin-top:10px;font-size:.92rem;color:var(--muted)}
+.snap .src{margin-top:10px;font-size:.82rem;color:var(--faint)}
+.snap .src a{color:var(--teal);margin-right:10px;word-break:break-word}
+
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:14px;margin-top:22px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}
+.step .n{width:34px;height:34px;border-radius:10px;background:var(--amber);color:#fff;font-family:var(--display);font-weight:700;display:flex;align-items:center;justify-content:center}
+.step p{margin-top:12px;font-size:.96rem}
+
+.arcband{background:var(--paper2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.arc{display:grid;grid-template-columns:repeat(4,1fr);margin-top:24px;position:relative}
+.arc::before{content:"";position:absolute;left:8%;right:8%;top:22px;height:3px;background:linear-gradient(90deg,var(--amber),var(--teal));border-radius:3px;z-index:0}
+.phase{text-align:center;padding:0 10px;position:relative;z-index:1}
+.phase .dot{width:16px;height:16px;border-radius:50%;background:var(--paper2);border:3px solid var(--amber);margin:14px auto 0}
+.phase:last-child .dot{border-color:var(--teal)}
+.phase .w{font-family:var(--display);font-weight:600;font-size:1.02rem;margin-top:12px}
+.phase .t{color:var(--muted);font-size:.9rem;margin-top:5px}
+.arcnote{text-align:center;color:var(--faint);font-family:var(--mono);font-size:.62rem;letter-spacing:.07em;text-transform:uppercase;margin-top:24px}
+
+.tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px;margin-top:22px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:left}
+.tcard .head{display:flex;align-items:center;gap:12px}
+.tcard .letter{width:42px;height:42px;border-radius:12px;background:var(--amber-soft);color:var(--amber);font-family:var(--display);font-weight:700;font-size:1.2rem;display:flex;align-items:center;justify-content:center}
+.tcard.e .letter{background:var(--teal-soft);color:var(--teal)}
+.tcard h3{font-family:var(--display);font-weight:600;font-size:1.12rem}
+.tcard .b{color:var(--muted);font-size:.95rem;margin-top:10px}
+.badge{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:.56rem;letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:999px}
+.badge.go{background:var(--teal-soft);color:var(--teal)}
+.badge.wait{background:#F0E3D0;color:#8a6a2a}
+
+.list{list-style:none;margin-top:18px;max-width:60ch}
+.list li{position:relative;padding-left:26px;margin-bottom:10px}
+.list li::before{content:"";position:absolute;left:4px;top:.6em;width:8px;height:8px;border-radius:50%;background:var(--teal)}
+.list.no li::before{background:var(--amber);border-radius:2px}
+
+.momo{max-width:720px;margin:0 auto;text-align:center;background:var(--ink);color:var(--paper);border-radius:20px;padding:32px 28px}
+.momo h2{font-family:var(--display);font-weight:700;font-size:1.4rem}
+.momo p{color:#EADFC9;margin-top:12px}
+
+.cards2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px;margin-top:22px}
+.slidecard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.slidecard .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,var(--teal-soft),var(--amber-soft));display:flex;align-items:center;justify-content:center;color:var(--teal)}
+.slidecard .thumb svg{width:46px;height:46px}
+.slidecard .body{padding:16px}
+.slidecard h3{font-family:var(--display);font-weight:600;font-size:1.05rem}
+.slidecard a.open{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
+.snote{color:var(--faint);font-size:.84rem;margin-top:14px;text-align:center}
+
+.support .sgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px;margin-top:20px}
+.support .schip{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:.86rem;color:var(--muted)}
+.princ{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:14px;margin-top:22px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}
+.pcard h3{font-family:var(--display);font-weight:600;font-size:1.08rem;display:flex;align-items:center;gap:10px}
+.pcard h3 .d{width:10px;height:10px;border-radius:50%;background:var(--amber);flex:0 0 auto}
+.pcard .b{color:var(--muted);font-size:.95rem;margin-top:8px}
+.pcard .a{color:var(--faint);font-size:.86rem;font-style:italic;margin-top:8px}
+
+.reader{background:var(--paper2);border-top:1px solid var(--line)}
+.reader-in{max-width:820px;margin:0 auto;padding:52px 20px 40px}
+.reader h2.rt{font-family:var(--display);font-weight:700;font-size:1.7rem;text-align:center}
+.rhint{text-align:center;color:var(--faint);font-size:.9rem;margin-top:6px}
+.docwrap{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px;margin-top:22px}
+.content h1{font-family:var(--display);font-weight:700;font-size:clamp(1.5rem,3.4vw,2rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 6px}
+.content h2{font-family:var(--display);font-weight:600;font-size:1.25rem;margin:24px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+.content p{margin:0 0 12px;max-width:70ch}
+.content ul{margin:6px 0 14px;list-style:none}
+.content li{position:relative;padding-left:22px;margin-bottom:7px;max-width:70ch}
+.content li::before{content:"";position:absolute;left:3px;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.content strong{font-weight:600}
+.content a{color:var(--teal);word-break:break-word}
+
+.foot{text-align:center;padding:40px 20px 64px;color:var(--faint)}
+.foot .f{font-family:var(--display);color:var(--ink);font-weight:600}
+.foot .mono2{display:block;margin-top:6px;font-family:var(--mono);font-size:.56rem;letter-spacing:.09em;text-transform:uppercase}
+.footlinks{margin-top:14px;font-size:.86rem;display:flex;flex-direction:column;gap:4px}
+.footlinks a{color:var(--teal)}
+.foot-ai{display:block;margin-top:12px;font-family:var(--mono);font-size:.55rem;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);max-width:56ch;margin-left:auto;margin-right:auto}
+.printall{display:none}
+
+
+/* --- situation dispatch --- */
+.snap .notemer{margin-top:12px;font-weight:600;color:var(--ink);background:var(--amber-soft);border:1px solid #EBD3AE;border-radius:10px;padding:10px 14px}
+.sitrows{margin-top:16px;display:grid;gap:14px}
+.sitrow{border-top:1px solid var(--line);padding-top:13px}
+.sitrow:first-child{border-top:0;padding-top:0}
+.sitrow .sl{font-family:var(--mono);font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;color:var(--amber)}
+.sitrow .st{margin-top:6px;color:var(--ink)}
+.sitrow .ss{margin-top:6px;font-size:.8rem}
+.sitrow .ss a{color:var(--teal);word-break:break-word;margin-right:6px}
+/* --- signature accent under section titles --- */
+.stitle::after{content:"";display:block;width:46px;height:3px;background:linear-gradient(90deg,var(--amber),var(--teal));border-radius:3px;margin-top:16px}
+.stitle.center::after{margin-left:auto;margin-right:auto}
+/* --- depth + hover on cards --- */
+.tcard,.pcard,.step,.snap{box-shadow:0 1px 2px rgba(36,31,25,.04),0 8px 24px rgba(36,31,25,.05)}
+.tcard,.pcard,.step,.schip{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.tcard:hover,.pcard:hover,.step:hover{transform:translateY(-3px);box-shadow:0 6px 14px rgba(36,31,25,.07),0 18px 40px rgba(36,31,25,.10);border-color:var(--amber)}
+.schip:hover{border-color:var(--teal);transform:translateY(-2px)}
+.btn,.tbtn{transition:transform .15s ease,background .15s ease,border-color .15s ease,color .15s ease}
+.btn:hover{transform:translateY(-2px)}
+/* --- hero refinement --- */
+.hero h1{font-weight:700;letter-spacing:-.025em}
+.kicker{display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:2px;background:var(--amber);display:inline-block}
+.hero-img{box-shadow:0 10px 40px rgba(36,31,25,.10)}
+/* --- origen: faint seismic-ring signature --- */
+#origen{position:relative;overflow:hidden}
+#origen .wrap{position:relative;z-index:1}
+#origen::before{content:"";position:absolute;right:-140px;top:-90px;width:440px;height:440px;pointer-events:none;background:radial-gradient(circle, transparent 29%, rgba(19,117,99,.07) 30%, transparent 32%, transparent 44%, rgba(178,105,20,.07) 45%, transparent 47%, transparent 59%, rgba(19,117,99,.05) 60%, transparent 62%, transparent 74%, rgba(178,105,20,.045) 75%, transparent 77%)}
+/* --- scroll reveal --- */
+.js-reveal .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.js-reveal .reveal.in{opacity:1;transform:none}
+
+@media(max-width:820px){
+ .arc{grid-template-columns:1fr;gap:22px;position:relative}
+ .arc::before{display:none}
+ .arc::after{content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--amber),var(--teal))}
+ .phase{text-align:left;position:relative;padding-left:34px}
+ .phase .dot{position:absolute;left:2px;top:5px;margin:0}
+ .menu-btn{display:inline-flex}
+ .actions{position:absolute;top:calc(100% + 6px);right:12px;left:12px;flex-direction:column;align-items:stretch;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px;display:none;box-shadow:0 16px 40px rgba(36,31,25,.16);z-index:70}
+ body.menu-open .actions{display:flex}
+ .actions .lang{justify-content:center}
+ .actions .tbtn{width:100%;text-align:center}
+ .mnav{display:flex}
+ .hero-img{aspect-ratio:16/9}
+}
+@media(prefers-reduced-motion:reduce){ #field{display:none} *{transition:none!important;animation:none!important;scroll-behavior:auto!important} }
+@media print{
+ .top,#field,.hero .glow,.ctas,.menu-btn,.foot .discord,.slidecard,.snote{display:none!important}
+ .hero,#origen,#how,#principios,.arcband,#tracks,#ecosistema,#d30,#wont,#momo,#support{display:none!important}
+ .reader{background:#fff;border:0}.docwrap{border:0;padding:0}#reader-view{display:none!important}
+ .printall{display:block!important}.printall .content{max-width:100%}
+ body{font-size:11pt;background:#fff}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#reader">Saltar al plan</a>
+
+<div class="top"><div class="in">
+ <button class="brand" id="brandHome"><span class="dot"></span>Conexión RedJIV</button>
+ <span class="sp"></span>
+ <div class="actions" id="actions" aria-label="Acciones">
+  <div class="lang" role="group" aria-label="Idioma"><button class="tbtn on" id="bes" aria-label="Español">ES</button><button class="tbtn" id="ben" aria-label="English">EN</button></div>
+  <a class="tbtn" id="planBtn" href="#reader"></a>
+  <a class="tbtn" id="supBtn" href="#support"></a>
+  <a class="tbtn discord" id="discBtn" href="#" target="_blank" rel="noopener">Discord</a>
+  <button class="tbtn" id="printBtn"></button>
+  <nav class="mnav" id="mnav" aria-label="Secciones"></nav>
+ </div>
+ <button class="tbtn menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false">&#9776;</button>
+</div></div>
+
+<header class="hero"><canvas id="field" aria-hidden="true"></canvas><div class="glow g1"></div><div class="glow g2"></div>
+ <div class="wrap in">
+  <div class="kicker" id="h-kick"></div>
+  <h1 id="h-title"></h1>
+  <p class="sub" id="h-sub"></p>
+  <div class="ctas">
+   <a class="btn primary" id="cta-join" href="#" target="_blank" rel="noopener"></a>
+   <a class="btn" id="cta-plan" href="#reader"></a>
+   <a class="btn" id="cta-support" href="#support"></a>
+  </div>
+  <figure class="imgslot hero-img" data-src="img/portada.jpg"><img id="img-hero" alt=""><div class="art"><svg viewBox="0 0 840 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Red científica latinoamericana sobre un globo"><defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EEE0"/><stop offset="1" stop-color="#F0E3D0"/></linearGradient><radialGradient id="glow" cx="70%" cy="52%" r="55%"><stop offset="0" stop-color="#F0CE92" stop-opacity=".5"/><stop offset="1" stop-color="#F0E3D0" stop-opacity="0"/></radialGradient><clipPath id="gc"><circle cx="600" cy="170" r="120"/></clipPath></defs><rect width="840" height="340" fill="url(#pg)"/><rect width="840" height="340" fill="url(#glow)"/><g stroke="#C6772A" stroke-width="1.3" opacity=".5"><line x1="70" y1="120" x2="180" y2="200"/><line x1="180" y1="200" x2="120" y2="280"/><line x1="180" y1="200" x2="300" y2="150"/><line x1="300" y1="150" x2="420" y2="210"/><line x1="420" y1="210" x2="480" y2="140"/></g><g><circle cx="70" cy="120" r="6" fill="#1E8A78"/><circle cx="180" cy="200" r="7" fill="#C6772A"/><circle cx="120" cy="280" r="5" fill="#1E8A78"/><circle cx="300" cy="150" r="6" fill="#C6772A"/><circle cx="420" cy="210" r="6" fill="#1E8A78"/><circle cx="480" cy="140" r="5" fill="#C6772A"/></g><circle cx="600" cy="170" r="120" fill="#1E8A78" opacity=".10"/><g clip-path="url(#gc)" stroke="#1E8A78" stroke-width="1.5" fill="none" opacity=".55"><ellipse cx="600" cy="170" rx="120" ry="40"/><ellipse cx="600" cy="170" rx="120" ry="80"/><ellipse cx="600" cy="170" rx="40" ry="120"/><ellipse cx="600" cy="170" rx="80" ry="120"/><line x1="480" y1="170" x2="720" y2="170"/></g><path d="M500 236 C 560 208, 640 208, 700 246" fill="none" stroke="#3FB0C9" stroke-width="4" stroke-linecap="round" opacity=".85"/><circle cx="600" cy="170" r="120" fill="none" stroke="#1E8A78" stroke-width="2"/><ellipse cx="600" cy="170" rx="165" ry="66" fill="none" stroke="#C6772A" stroke-width="2" opacity=".7"/><circle cx="435" cy="170" r="7" fill="#C6772A"/><circle cx="765" cy="170" r="7" fill="#1E8A78"/><circle cx="600" cy="104" r="6" fill="#3FB0C9"/></svg></div></figure>
+ </div>
+</header>
+
+<section id="situacion"><div class="wrap">
+ <div class="snap">
+  <div class="head"><h2 id="sit-title"></h2><span class="asof" id="sit-asof"></span></div>
+  <p class="notemer" id="sit-notemer"></p>
+  <div class="sitrows" id="sit-rows"></div>
+  <p class="warn" id="sit-warn"></p>
+ </div>
+</div></section>
+
+<div class="arcband"><section id="origen"><div class="wrap">
+ <h2 class="stitle" id="or-title"></h2>
+ <p class="ssub" id="or-body"></p>
+ <div class="chips" id="or-chips"></div>
+</div></section></div>
+
+<section id="how"><div class="wrap">
+ <div class="slabel center" id="how-title"></div>
+ <div class="flow" id="flow"></div>
+</div></section>
+
+<section id="principios"><div class="wrap">
+ <h2 class="stitle center" id="pr-title"></h2><p class="ssub center" id="pr-sub"></p>
+ <div class="princ" id="pr-grid"></div>
+</div></section>
+
+<div class="arcband"><section id="arcband-s"><div class="wrap">
+ <h2 class="stitle center" id="arc-title"></h2>
+ <div class="arc" id="arc"></div>
+ <div class="arcnote" id="arc-note"></div>
+</div></section></div>
+
+<section id="tracks"><div class="wrap">
+ <h2 class="stitle center" id="tr-title"></h2><p class="ssub center" id="tr-sub"></p>
+ <div class="tracks" id="tk"></div>
+</div></section>
+
+<section id="ecosistema"><div class="wrap">
+ <h2 class="stitle" id="eco-title"></h2>
+ <p class="ssub" id="eco-intro"></p>
+ <div class="snap" style="border-left-color:var(--teal);margin-top:18px"><p id="eco-noreplace" style="margin:0;font-weight:500"></p><p class="warn" id="eco-verify"></p></div>
+ <div class="slabel" id="eco-trustedlabel" style="margin-top:26px"></div>
+ <ul class="list" id="eco-trusted"></ul>
+ <div class="slabel" id="eco-dirlabel" style="margin-top:22px"></div>
+ <div class="tracks" id="eco-dir"></div>
+ <p class="snote" id="eco-foot" style="text-align:left"></p>
+</div></section>
+
+<section id="d30"><div class="wrap">
+ <h2 class="stitle" id="d30-title"></h2>
+ <ul class="list" id="d30-list"></ul>
+</div></section>
+
+<section id="wont"><div class="wrap">
+ <h2 class="stitle" id="wont-title"></h2>
+ <ul class="list no" id="wont-list"></ul>
+</div></section>
+
+<section id="momo"><div class="wrap"><div class="momo"><h2 id="momo-title"></h2><p id="momo-body"></p></div></div></section>
+
+<section id="support" class="support"><div class="wrap">
+ <h2 class="stitle" id="sup-title"></h2><p class="ssub" id="sup-body"></p>
+ <div class="sgrid" id="sup-grid"></div>
+ <div class="ctas"><a class="btn primary" id="sup-join" href="#" target="_blank" rel="noopener"></a></div>
+</div></section>
+
+<section class="reader" id="reader"><div class="reader-in">
+ <h2 class="rt" id="r-title"></h2><p class="rhint" id="r-hint"></p>
+ <div class="docwrap"><div id="reader-view" class="content"></div></div>
+</div></section>
+
+<div class="printall" id="printall"></div>
+<div class="foot">
+ <span class="f">Conexión RedJIV</span><span class="mono2" id="foot-sub"></span>
+ <div style="margin-top:14px"><a class="tbtn discord" id="foot-disc" href="#" target="_blank" rel="noopener">Discord</a></div>
+ <div class="footlinks"><span id="foot-cc"></span><span id="foot-lic"></span></div>
+ <span class="foot-ai" id="foot-ai"></span>
+</div>
+
+<script>
+var PUBDOC={"es": "# Conexión RedJIV · Plan público\n\nDocumento público y seguro. No incluye nombres de personas dentro de Venezuela, ubicaciones, ni detalles operativos internos.\n\n## Qué es\n\nLa reacción de una red de jóvenes investigadores venezolanos, dentro y fuera del país, a los terremotos del 24 de junio de 2026. Ponemos talento y conocimiento a producir cosas útiles a distancia, canalizando todo a través de organismos ya establecidos. No hacemos rescate ni improvisamos en la zona.\n\n## Perfil bajo por diseño\n\nNo buscamos figurar. El crédito es de quien hace el trabajo. Trabajar en silencio también protege a quienes están dentro del país.\n\n## De dónde viene\n\nConexión RedJIV no empieza de cero. Nace del mismo espíritu de CoAfina y del hackathon de datos abiertos de LA-CoNGA: convertir datos abiertos en soluciones que transformen realidades, resolviendo retos científicos y educativos en comunidad. Esta es su edición de emergencia, el mismo modelo puesto al servicio de la respuesta y la reconstrucción.\n\n## El modelo: un hackathon de largo plazo\n\nCorremos el esfuerzo como una edición de emergencia de CoAfina, un hackathon de datos abiertos de América Latina, adaptado: no dura un fin de semana, dura hasta ayudar a reconstruir. Los encuentros de la red son los sprints: 10 de julio, 24 de julio y 7 de agosto.\n\n## Los tracks\n\n- A Mapa de necesidades y accesos: ver dónde falta ayuda y cómo llegar, con datos abiertos.\n- B Tierra segura: riesgo de réplicas y criterios de sitio seguro.\n- C Agua limpia: guía de agua segura y saneamiento para refugios.\n- D Salud y ánimo: cuidado de la salud y apoyo psicosocial.\n- E La base: une, coordina y sostiene a los demás.\n- F Ecosistema y datos: ordenar, verificar y conectar las plataformas que ya existen, sin duplicar datos sensibles.\n\n## Arranque realista\n\nEmpezamos con E, A, C y F. El track D arranca cuando estén listas las salvaguardas de privacidad y ética. El track B arranca si los especialistas de geociencias confirman disponibilidad y datos. Cada track tiene un primer entregable que se puede hacer a distancia.\n\n## Qué entregaremos en 30 días\n\n- Una base viva de coordinación y datos.\n- Una guía de agua segura lista para imprimir y repartir.\n- Un primer mapa reproducible de vacíos de cobertura, hecho con datos abiertos.\n\n## El incentivo\n\nMás que un premio: que el esfuerzo cuente y no se apague. Salir como primer autor, tener mentoría y recursos, y darle continuidad al trabajo. El reconocimiento en efectivo es secundario y va atado a entregables, no a inscribirse.\n\n## Cómo sumarte\n\nEscribe por el canal de la comunidad (Discord) y dinos en qué track puedes aportar y cuántas horas. Cada quien entra donde de verdad puede ayudar.\n\n## Cómo apoyar\n\nAyuda que suma: créditos de cómputo, mentoría científica y técnica, alianzas institucionales y difusión responsable. Todo se canaliza con perfil bajo y a través de organismos establecidos.\n\n## Lo que nos hace distintos\n\n- Perfil bajo por diseño. El crédito es de quien hace el trabajo, y el silencio también protege a quien está dentro del país.\n- No duplicar, conectar. No hacemos otra plataforma más; ordenamos, verificamos y conectamos lo que ya existe.\n- Utilidad antes que ruido. Entregables que sirven, no anuncios.\n- Abierto y verificable. Datos abiertos, código con DOI y fuentes citadas.\n- Autoría para el joven investigador. Primer autor, con mentoría y continuidad.\n- A través de organismos establecidos. OCHA, UNICEF, CICR y protección civil. No improvisamos en la zona.\n\n## Lo que no haremos\n\n- No improvisamos en la zona del desastre.\n- No publicamos datos de pacientes ni de víctimas.\n- No exponemos la ubicación de personas vulnerables.\n- No exponemos a los miembros que están dentro de Venezuela.\n\n## Ecosistema digital de emergencia: no duplicar, conectar mejor\n\nYa existen varias plataformas ciudadanas para búsqueda de personas, hospitales, heridos, reunificación de niños, ayuda, apoyo psicológico, mapas de daños e información en tiempo real. Nuestra contribución no será crear ruido ni duplicar registros sensibles, sino ayudar a ordenar, verificar, documentar, conectar y proteger mejor ese ecosistema.\n\nEste proyecto no reemplaza a los servicios de emergencia, los hospitales, Protección Civil ni los registros oficiales. Para una emergencia, usa siempre los canales oficiales. Empieza por los canales establecidos: el CICR y la Cruz Roja para reconectar familiares (familylinks.icrc.org), y UNICEF y OCHA para niñez y coordinación.\n\nLas plataformas ciudadanas son de terceros, no oficiales y no verificadas por nosotros. En desastres circulan sitios falsos que imitan nombres reales, así que verifica el dominio antes de entrar y no compartas datos sensibles si no estás seguro. No copiamos ni reproducimos nombres, cédulas, fotos, ubicaciones de hospitales ni datos de menores. Para la reunificación de niños hace falta verificación presencial y procedimientos de protección infantil.\n\n## Licencia y créditos\n\nContenido bajo CC BY-SA 4.0, atribuido a Conexión RedJIV, con el apoyo de Creative Commons Venezuela. Las ilustraciones son originales, hechas con asistencia de IA; no se usan imágenes de terceros.\n", "en": "# Conexión RedJIV · Public plan\n\nPublic, safe document. It does not include names of people inside Venezuela, locations, or internal operational details.\n\n## What it is\n\nThe response of a network of young Venezuelan researchers, inside and outside the country, to the earthquakes of June 24, 2026. We put talent and knowledge to work remotely on useful things, channeling everything through already-established bodies. We do not do rescue or improvise in the zone.\n\n## Low profile by design\n\nWe do not seek the spotlight. Credit belongs to whoever does the work. Working quietly also protects those inside the country.\n\n## Where it comes from\n\nConexión RedJIV does not start from scratch. It grows from the spirit of CoAfina and the LA-CoNGA open-data hackathon: turning open data into solutions that transform realities, solving scientific and educational challenges as a community. This is its emergency edition, the same model put to work for response and reconstruction.\n\n## The model: a long-term hackathon\n\nWe run the effort as an emergency edition of CoAfina, a Latin American open-data hackathon, adapted: it does not last a weekend, it lasts until we help rebuild. The network's meetings are the sprints: July 10, July 24 and August 7.\n\n## The tracks\n\n- A Needs and access map: see where help is missing and how to get there, with open data.\n- B Safe ground: aftershock risk and safe-siting criteria.\n- C Clean water: safe-water and sanitation guide for shelters.\n- D Health and spirit: health care and psychosocial support.\n- E The backbone: connects, coordinates and holds up the rest.\n- F Ecosystem and data: order, verify and connect the platforms that already exist, without duplicating sensitive data.\n\n## A realistic start\n\nWe begin with E, A, C and F. Track D starts once privacy and ethics safeguards are ready. Track B starts if geoscience specialists confirm availability and data. Each track has a first deliverable that can be done remotely.\n\n## What we will deliver in 30 days\n\n- A live coordination and data backbone.\n- A safe-water guide ready to print and hand out.\n- A first reproducible coverage-gap map, built from open data.\n\n## The incentive\n\nMore than a prize: that the effort counts and does not fade. Being first author, having mentorship and resources, and giving the work continuity. Cash recognition is secondary and tied to deliverables, not to signing up.\n\n## How to join\n\nReach out through the community channel (Discord) and tell us which track you can contribute to and how many hours. Each person joins where they can truly help.\n\n## How to support\n\nHelp that adds up: compute credits, scientific and technical mentorship, institutional partnerships and responsible outreach. Everything is channeled with a low profile and through established bodies.\n\n## What makes us different\n\n- Low profile by design. Credit belongs to whoever does the work, and quiet also protects those inside the country.\n- Do not duplicate, connect. We do not build yet another platform; we order, verify and connect what already exists.\n- Usefulness before noise. Deliverables that help, not announcements.\n- Open and verifiable. Open data, code with a DOI and cited sources.\n- Authorship for the young researcher. First author, with mentorship and continuity.\n- Through established bodies. OCHA, UNICEF, the ICRC and civil protection. We do not improvise in the zone.\n\n## What we will not do\n\n- We do not improvise in the disaster zone.\n- We do not publish patient or victim data.\n- We do not expose the location of vulnerable people.\n- We do not expose members inside Venezuela.\n\n## Emergency digital ecosystem: do not duplicate, connect better\n\nSeveral citizen platforms already exist for finding people, hospitals, injured people, child reunification, aid, psychological support, damage maps and real-time information. Our contribution will not be to add noise or duplicate sensitive registries, but to help order, verify, document, connect and better protect that ecosystem.\n\nThis project does not replace emergency services, hospitals, civil protection or official registries. In an emergency, always use official channels. Start with established ones: the ICRC and the Red Cross to reconnect families (familylinks.icrc.org), and UNICEF and OCHA for children and coordination.\n\nThe citizen platforms are third-party, unofficial and not verified by us. In disasters, fake sites that imitate real names circulate, so verify the domain before entering and do not share sensitive data if you are unsure. We do not copy or reproduce names, IDs, photos, hospital locations or children's data. Child reunification requires in-person verification and child-protection procedures.\n\n## License and credits\n\nContent under CC BY-SA 4.0, attributed to Conexión RedJIV, supported by Creative Commons Venezuela. Illustrations are original, made with AI assistance; no third-party images are used.\n"}, PUB={"es": {"metaDesc": "Red de jóvenes investigadores venezolanos que ayuda tras los terremotos del 24 de junio de 2026. Un hackathon de largo plazo, perfil bajo, resultados útiles.", "hero": {"kicker": "Un hackathon de largo plazo · Conexión RedJIV", "title": "El conocimiento no se fue. Sigue aquí, conectado.", "sub": "Científicos venezolanos, dentro y fuera del país, ayudando tras los terremotos del 24 de junio. Perfil bajo. Resultados útiles."}, "ctaJoin": "Sumarse", "ctaPlan": "Leer el plan", "ctaSupport": "Apoyar", "discordLabel": "Discord", "printLabel": "Imprimir / PDF", "sitTitle": "Situación", "sitAsOf": "Actualizado 4 jul 2026", "sitNotEmergency": "Esto no es un servicio de emergencia. Para una emergencia, usa los canales oficiales.", "sitWarn": "Las cifras son preliminares, varían según la fuente y cambian a diario. Si no hay una fuente exacta y fechada, trátalas como aproximadas.", "sitRows": [{"label": "El evento", "text": "Doble terremoto de magnitud 7,2 y 7,5, con 39 segundos de diferencia, el 24 de junio de 2026. Epicentro en el municipio Veroes (Yaracuy), al oeste de San Felipe. Cientos de réplicas y riesgo de nuevas. Fuente sísmica: USGS.", "src": [{"t": "USGS, vía ABC News, 3 jul 2026", "u": "https://abcnews.com/International/venezuela-earthquakes-latest-50000-unaccounted-death-toll-climbs/story?id=134386173"}]}, {"label": "Necesidad humanitaria", "text": "Cerca de 1,8 millones de personas necesitan asistencia, 680.000 de ellas niños.", "src": [{"t": "ONU, UNICEF y OCHA, 29 jun 2026", "u": "https://news.un.org/en/story/2026/06/1167837"}]}, {"label": "Cifras (preliminares y en disputa)", "text": "Al 2 de julio, la presidenta encargada citó al menos 2.595 fallecidos, unos 12.400 heridos y cerca de 50.000 personas sin localizar, con más de 860 réplicas. La USGS estimó una probabilidad alta de que el total supere los 10.000. Algunas fuentes las consideran un subconteo.", "src": [{"t": "ABC News, 3 jul 2026", "u": "https://abcnews.com/International/venezuela-earthquakes-latest-50000-unaccounted-death-toll-climbs/story?id=134386173"}, {"t": "CNN, 2 jul 2026", "u": "https://www.cnn.com/2026/07/02/americas/venezuela-earthquakes-morgue-death-toll-latam-intl"}]}], "howTitle": "Cómo funciona", "how": [{"n": "1", "t": "Eliges un track, una forma concreta de ayudar."}, {"n": "2", "t": "Trabajas en sprints, marcados por los encuentros de la red."}, {"n": "3", "t": "Entregas algo útil y sales como primer autor."}, {"n": "4", "t": "Mantienes el impulso, y todo suma a la reconstrucción."}], "arcTitle": "De la respuesta a la reconstrucción", "arc": [{"w": "Ahora", "t": "Respuesta. Activar los grupos y ayudar en lo urgente."}, {"w": "En meses", "t": "Entregables. Mapas, agua, salud. Resultados que sirven."}, {"w": "En un año", "t": "Recuperación. Datos, monitoreo y enseñar."}, {"w": "En dos años", "t": "Reconstrucción con ciencia. Y la red se queda."}], "arcNote": "Cada encuentro de la red (10 jul, 24 jul, 7 ago…) es un sprint.", "tracksTitle": "Los tracks", "tracksSub": "Empezamos con E, A, C y F. Los otros dos entran con condiciones.", "tracks": [{"l": "A", "n": "Mapa de necesidades", "b": "Ver dónde falta ayuda y cómo llegar, con datos abiertos.", "s": "Arranca ya", "k": "go"}, {"l": "C", "n": "Agua limpia", "b": "Guía de agua segura y saneamiento para refugios.", "s": "Arranca ya", "k": "go"}, {"l": "E", "n": "La base", "b": "Une, coordina y sostiene a los demás.", "s": "Arranca ya", "k": "go"}, {"l": "D", "n": "Salud y ánimo", "b": "Cuidado de la salud y apoyo psicosocial.", "s": "Tras salvaguardas", "k": "wait"}, {"l": "B", "n": "Tierra segura", "b": "Riesgo de réplicas y criterios de sitio seguro.", "s": "Si geo confirma", "k": "wait"}, {"l": "F", "n": "Ecosistema y datos", "b": "Ordenar, verificar y conectar las plataformas que ya existen, sin duplicar datos sensibles.", "s": "Arranca ya", "k": "go"}], "d30Title": "Qué entregaremos en 30 días", "d30": ["Una base viva de coordinación y datos.", "Una guía de agua segura lista para imprimir y repartir.", "Un primer mapa reproducible de vacíos de cobertura, con datos abiertos."], "wontTitle": "Lo que no haremos", "wont": ["No improvisamos en la zona del desastre.", "No publicamos datos de pacientes ni de víctimas.", "No exponemos la ubicación de personas vulnerables.", "No exponemos a los miembros que están dentro de Venezuela."], "momoTitle": "Por qué participar", "momoBody": "Más que un premio: que el esfuerzo cuente y no se apague. Sales como primer autor, con mentoría y recursos, y el trabajo tiene continuidad. El reconocimiento en efectivo es secundario y va atado a entregables, no a inscribirse.", "supTitle": "Cómo apoyar", "supBody": "Ayuda que suma, con perfil bajo y a través de organismos establecidos.", "sup": ["Créditos de cómputo y GPU", "Mentoría científica y técnica", "Alianzas institucionales", "Difusión responsable"], "readerTitle": "Plan público completo", "readerHint": "El plan, sin datos sensibles.", "footSub": "Red de Jóvenes Investigadores de Venezuela · perfil bajo", "artHero": "Ilustración: red científica latinoamericana sobre un globo", "artMap": "Ilustración: mapa con rutas y puntos de ayuda", "artWater": "Ilustración: gota de agua y pulso de salud", "artNet": "Ilustración: red de personas conectadas", "origin": {"title": "De dónde viene", "body": "Conexión RedJIV no empieza de cero. Nace del mismo espíritu de CoAfina y del hackathon de datos abiertos de LA-CoNGA: convertir datos abiertos en soluciones que transformen realidades, resolviendo retos científicos y educativos en comunidad. Esta es su edición de emergencia, el mismo modelo puesto al servicio de la respuesta y la reconstrucción.", "chips": ["Datos abiertos → soluciones", "Comunidad científica latinoamericana", "Perfil bajo por diseño", "Autoría de quien hace el trabajo"]}, "princ": {"title": "Lo que nos hace distintos", "sub": "Principios, con los pies en la tierra.", "items": [{"t": "Perfil bajo por diseño", "b": "El crédito es de quien hace el trabajo, y el silencio también protege a quien está dentro del país.", "a": ""}, {"t": "No duplicar, conectar", "b": "No hacemos otra plataforma más. Ordenamos, verificamos y conectamos lo que ya existe.", "a": "Como un buen bibliotecario, no como otra pila de papeles sueltos."}, {"t": "Utilidad antes que ruido", "b": "Entregables que sirven, no anuncios. Si no le sirve a alguien, no va.", "a": ""}, {"t": "Abierto y verificable", "b": "Datos abiertos, código con DOI y fuentes citadas. Cualquiera puede revisarlo.", "a": "Como una receta compartida, no una fórmula secreta."}, {"t": "Autoría para el joven investigador", "b": "Quien hace el trabajo sale como primer autor, con mentoría y continuidad.", "a": ""}, {"t": "A través de organismos establecidos", "b": "Canalizamos por OCHA, UNICEF, CICR y protección civil. No improvisamos en la zona.", "a": ""}]}, "eco": {"title": "Ecosistema digital de emergencia: no duplicar, conectar mejor", "intro": "Ya existen varias plataformas ciudadanas para búsqueda de personas, hospitales, heridos, reunificación de niños, ayuda, apoyo psicológico, mapas de daños e información en tiempo real. Nuestra contribución no será crear ruido ni duplicar registros sensibles, sino ayudar a ordenar, verificar, documentar, conectar y proteger mejor ese ecosistema.", "noReplace": "Este proyecto no reemplaza a los servicios de emergencia, los hospitales, Protección Civil ni los registros oficiales. Para una emergencia, usa siempre los canales oficiales.", "verifyWarn": "Las plataformas de abajo son de terceros, no oficiales y no verificadas por nosotros. En desastres circulan sitios falsos que imitan nombres reales; de hecho el afiche original tiene nombres que no coinciden con los dominios reales. Verifica el dominio antes de entrar y no compartas datos sensibles si no estás seguro.", "trustedLabel": "Empieza por los canales establecidos", "trusted": [{"name": "CICR y Cruz Roja · Restablecimiento del Contacto entre Familiares", "url": "https://familylinks.icrc.org/", "desc": "vía establecida para buscar y reconectar familiares, en especial niños."}, {"name": "UNICEF y OCHA", "url": "https://www.unicef.org/", "desc": "niñez y coordinación humanitaria."}, {"name": "Protección Civil y emergencias", "url": "", "desc": "números y canales oficiales del país."}], "dirLabel": "Plataformas ciudadanas (no oficiales, por verificar)", "items": [{"cat": "Búsqueda de personas", "purpose": "Buscar o reportar a alguien desaparecido.", "dom": "venezuelatebusca.com · desaparecidosterremotovenezuela.com", "estado": "Por verificar", "sens": "Sensibilidad alta · datos personales, fotos", "note": "El afiche dice venetebusca.com, que no coincide con el dominio real venezuelatebusca.com: posible error o sitio imitación. No oficial; los datos los suben los usuarios sin verificación independiente."}, {"cat": "Ingresado en un hospital", "purpose": "Buscar si alguien está en un centro de salud.", "dom": "hospitalesenvenezuela.com", "estado": "Por verificar", "sens": "Sensibilidad alta · datos de salud", "note": "Trátese como dato de salud sensible. No duplicar ni copiar."}, {"cat": "Buscar a un herido", "purpose": "Registro de heridos organizado por hospital.", "dom": "heridosvenezuela.com", "estado": "Por verificar", "sens": "Sensibilidad alta · datos de salud", "note": "Dato de salud sensible. No duplicar."}, {"cat": "Niños sin familia", "purpose": "Reunificar niños con sus familias.", "dom": "reencuentroseguro.com", "estado": "Por verificar", "sens": "Sensibilidad máxima · menores", "note": "Requiere verificación presencial y procedimientos de protección infantil. Canaliza por autoridades, UNICEF y CICR. Nunca compartas ni publiques datos de menores."}, {"cat": "Red de ayuda", "purpose": "Conectar con quien necesita algo o puede ayudar.", "dom": "vzlayuda.com", "estado": "Por verificar", "sens": "Sensibilidad media · contacto y ubicación", "note": "No oficial. Cuidado con datos de contacto y ubicación."}, {"cat": "Apoyo psicológico", "purpose": "Acompañamiento psicológico gratuito y confidencial.", "dom": "estamoscontigovzla.com", "estado": "Por verificar", "sens": "Sensibilidad alta · salud mental", "note": "Confidencial y sensible. Verifica que sea un servicio profesional y seguro."}, {"cat": "Mapa de daños", "purpose": "Mapa de daños, por ejemplo en La Guaira.", "dom": "radarvzla.com", "estado": "Por verificar", "sens": "Sensibilidad media · direcciones", "note": "Puede confundirse con radarvenezuela.org, hallado en búsquedas: verifica cuál es el real. Evita exponer direcciones privadas exactas."}, {"cat": "Información en tiempo real", "purpose": "Alertas de réplicas, zonas de riesgo y balance.", "dom": "nexovida.io", "estado": "Por verificar", "sens": "Sensibilidad baja · información pública", "note": "Contrasta siempre con fuentes oficiales como USGS, FUNVISIS y OCHA."}], "checked": "Última revisión: 4 jul 2026", "footNote": "es un directorio de referencia, no una lista de sitios recomendados. Verificar es justo el trabajo del track F."}}, "en": {"metaDesc": "A network of young Venezuelan researchers helping after the June 24, 2026 earthquakes. A long-term hackathon, low profile, useful outputs.", "hero": {"kicker": "A long-term hackathon · Conexión RedJIV", "title": "The knowledge did not leave. It is still here, connected.", "sub": "Venezuelan scientists, inside and outside the country, helping after the June 24 earthquakes. Low profile. Useful outputs."}, "ctaJoin": "Join", "ctaPlan": "Read the plan", "ctaSupport": "Support", "discordLabel": "Discord", "printLabel": "Print / PDF", "sitTitle": "Situation", "sitAsOf": "Updated Jul 4, 2026", "sitNotEmergency": "This is not an emergency service. In an emergency, use official channels.", "sitWarn": "Figures are preliminary, vary by source and change daily. Where there is no exact, dated source, treat them as approximate.", "sitRows": [{"label": "The event", "text": "A double earthquake of magnitude 7.2 and 7.5, 39 seconds apart, on June 24, 2026. Epicenter in Veroes Municipality (Yaracuy), west of San Felipe. Hundreds of aftershocks and risk of more. Seismic source: USGS.", "src": [{"t": "USGS, via ABC News, Jul 3, 2026", "u": "https://abcnews.com/International/venezuela-earthquakes-latest-50000-unaccounted-death-toll-climbs/story?id=134386173"}]}, {"label": "Humanitarian need", "text": "Around 1.8 million people need assistance, 680,000 of them children.", "src": [{"t": "UN, UNICEF and OCHA, Jun 29, 2026", "u": "https://news.un.org/en/story/2026/06/1167837"}]}, {"label": "Figures (preliminary and disputed)", "text": "As of July 2, the acting president cited at least 2,595 dead, around 12,400 injured and nearly 50,000 unaccounted for, with more than 860 aftershocks. USGS estimated a high probability the total exceeds 10,000. Some sources consider these an undercount.", "src": [{"t": "ABC News, Jul 3, 2026", "u": "https://abcnews.com/International/venezuela-earthquakes-latest-50000-unaccounted-death-toll-climbs/story?id=134386173"}, {"t": "CNN, Jul 2, 2026", "u": "https://www.cnn.com/2026/07/02/americas/venezuela-earthquakes-morgue-death-toll-latam-intl"}]}], "howTitle": "How it works", "how": [{"n": "1", "t": "You pick a track, a concrete way to help."}, {"n": "2", "t": "You work in sprints, marked by the network's meetings."}, {"n": "3", "t": "You deliver something useful and come out first author."}, {"n": "4", "t": "You keep the momentum, and it all adds to the reconstruction."}], "arcTitle": "From response to reconstruction", "arc": [{"w": "Now", "t": "Response. Activate the groups and help with the urgent."}, {"w": "In months", "t": "Deliverables. Maps, water, health. Results that help."}, {"w": "In a year", "t": "Recovery. Data, monitoring and teaching."}, {"w": "In two years", "t": "Reconstruction with science. And the network stays."}], "arcNote": "Each network meeting (Jul 10, Jul 24, Aug 7…) is a sprint.", "tracksTitle": "The tracks", "tracksSub": "We start with E, A, C and F. The other two join under conditions.", "tracks": [{"l": "A", "n": "Needs map", "b": "See where help is missing and how to get there, with open data.", "s": "Starts now", "k": "go"}, {"l": "C", "n": "Clean water", "b": "Safe-water and sanitation guide for shelters.", "s": "Starts now", "k": "go"}, {"l": "E", "n": "The backbone", "b": "Connects, coordinates and holds up the rest.", "s": "Starts now", "k": "go"}, {"l": "D", "n": "Health and spirit", "b": "Health care and psychosocial support.", "s": "After safeguards", "k": "wait"}, {"l": "B", "n": "Safe ground", "b": "Aftershock risk and safe-siting criteria.", "s": "If geo confirms", "k": "wait"}, {"l": "F", "n": "Ecosystem and data", "b": "Order, verify and connect the platforms that already exist, without duplicating sensitive data.", "s": "Starts now", "k": "go"}], "d30Title": "What we will deliver in 30 days", "d30": ["A live coordination and data backbone.", "A safe-water guide ready to print and hand out.", "A first reproducible coverage-gap map, from open data."], "wontTitle": "What we will not do", "wont": ["We do not improvise in the disaster zone.", "We do not publish patient or victim data.", "We do not expose the location of vulnerable people.", "We do not expose members inside Venezuela."], "momoTitle": "Why take part", "momoBody": "More than a prize: that the effort counts and does not fade. You come out first author, with mentorship and resources, and the work has continuity. Cash recognition is secondary and tied to deliverables, not to signing up.", "supTitle": "How to support", "supBody": "Help that adds up, low profile and through established bodies.", "sup": ["Compute and GPU credits", "Scientific and technical mentorship", "Institutional partnerships", "Responsible outreach"], "readerTitle": "Full public plan", "readerHint": "The plan, without sensitive data.", "footSub": "Network of Young Venezuelan Researchers · low profile", "artHero": "Illustration: Latin American science network over a globe", "artMap": "Illustration: map with routes and help points", "artWater": "Illustration: water drop and health pulse", "artNet": "Illustration: network of connected people", "origin": {"title": "Where it comes from", "body": "Conexión RedJIV does not start from scratch. It grows from the spirit of CoAfina and the LA-CoNGA open-data hackathon: turning open data into solutions that transform realities, solving scientific and educational challenges as a community. This is its emergency edition, the same model put to work for response and reconstruction.", "chips": ["Open data → solutions", "Latin American science community", "Low profile by design", "Credit to whoever does the work"]}, "princ": {"title": "What makes us different", "sub": "Principles, with our feet on the ground.", "items": [{"t": "Low profile by design", "b": "Credit belongs to whoever does the work, and quiet also protects those inside the country.", "a": ""}, {"t": "Do not duplicate, connect", "b": "We do not build yet another platform. We order, verify and connect what already exists.", "a": "Like a good librarian, not another pile of loose papers."}, {"t": "Usefulness before noise", "b": "Deliverables that help, not announcements. If it does not help someone, it does not ship.", "a": ""}, {"t": "Open and verifiable", "b": "Open data, code with a DOI and cited sources. Anyone can check it.", "a": "Like a shared recipe, not a secret formula."}, {"t": "Authorship for the young researcher", "b": "Whoever does the work comes out first author, with mentorship and continuity.", "a": ""}, {"t": "Through established bodies", "b": "We channel through OCHA, UNICEF, the ICRC and civil protection. We do not improvise in the zone.", "a": ""}]}, "eco": {"title": "Emergency digital ecosystem: do not duplicate, connect better", "intro": "Several citizen platforms already exist for finding people, hospitals, injured people, child reunification, aid, psychological support, damage maps and real-time information. Our contribution will not be to add noise or duplicate sensitive registries, but to help order, verify, document, connect and better protect that ecosystem.", "noReplace": "This project does not replace emergency services, hospitals, civil protection or official registries. In an emergency, always use official channels.", "verifyWarn": "The platforms below are third-party, unofficial and not verified by us. In disasters, fake sites that imitate real names circulate; in fact the original poster has names that do not match the real domains. Verify the domain before entering and do not share sensitive data if you are unsure.", "trustedLabel": "Start with established channels", "trusted": [{"name": "ICRC and Red Cross · Restoring Family Links", "url": "https://familylinks.icrc.org/", "desc": "established way to search for and reconnect relatives, especially children."}, {"name": "UNICEF and OCHA", "url": "https://www.unicef.org/", "desc": "children and humanitarian coordination."}, {"name": "Civil protection and emergencies", "url": "", "desc": "official emergency numbers and channels."}], "dirLabel": "Citizen platforms (unofficial, needs verification)", "items": [{"cat": "Finding people", "purpose": "Search for or report someone missing.", "dom": "venezuelatebusca.com · desaparecidosterremotovenezuela.com", "estado": "Needs verification", "sens": "High sensitivity · personal data, photos", "note": "The poster says venetebusca.com, which does not match the real domain venezuelatebusca.com: possible typo or imitation site. Unofficial; data is user-submitted, not independently verified."}, {"cat": "Admitted to a hospital", "purpose": "Check if someone is at a health center.", "dom": "hospitalesenvenezuela.com", "estado": "Needs verification", "sens": "High sensitivity · health data", "note": "Treat as sensitive health data. Do not duplicate or copy."}, {"cat": "Looking for an injured person", "purpose": "Registry of injured people by hospital.", "dom": "heridosvenezuela.com", "estado": "Needs verification", "sens": "High sensitivity · health data", "note": "Sensitive health data. Do not duplicate."}, {"cat": "Children without family", "purpose": "Reunite children with their families.", "dom": "reencuentroseguro.com", "estado": "Needs verification", "sens": "Maximum sensitivity · minors", "note": "Requires in-person verification and child-protection procedures. Channel through authorities, UNICEF and the ICRC. Never share or publish children's data."}, {"cat": "Help network", "purpose": "Connect with who needs something or can help.", "dom": "vzlayuda.com", "estado": "Needs verification", "sens": "Medium sensitivity · contact and location", "note": "Unofficial. Be careful with contact and location data."}, {"cat": "Psychological support", "purpose": "Free, confidential psychological support.", "dom": "estamoscontigovzla.com", "estado": "Needs verification", "sens": "High sensitivity · mental health", "note": "Confidential and sensitive. Verify it is a professional, safe service."}, {"cat": "Damage map", "purpose": "Damage map, for example in La Guaira.", "dom": "radarvzla.com", "estado": "Needs verification", "sens": "Medium sensitivity · addresses", "note": "May be confused with radarvenezuela.org, found in searches: verify which is real. Avoid exposing exact private addresses."}, {"cat": "Real-time information", "purpose": "Aftershock alerts, risk zones and toll.", "dom": "nexovida.io", "estado": "Needs verification", "sens": "Low sensitivity · public information", "note": "Always cross-check with official sources such as USGS, FUNVISIS and OCHA."}], "checked": "Last checked: Jul 4, 2026", "footNote": "this is a reference directory, not a list of recommended sites. Verifying is exactly the work of track F."}}}, CFG={"discord": "https://discord.gg/yWhUUvrhpj"};
+var lang="es";
+
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function inl(s){s=esc(s);s=s.replace(/`([^`]+)`/g,function(m,c){return "<code>"+c+"</code>";});s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");s=s.replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>');return s;}
+function renderMD(md){var L=md.replace(/\r/g,"").split("\n"),o=[],i=0;
+ while(i<L.length){var line=L[i];
+  var h=/^(#{1,6})\s+(.*)$/.exec(line);if(h){var lv=h[1].length;o.push("<h"+lv+">"+inl(h[2])+"</h"+lv+">");i++;continue;}
+  if(/^\s*[-*]\s+/.test(line)){var it=[];while(i<L.length&&/^\s*[-*]\s+/.test(L[i])){it.push("<li>"+inl(L[i].replace(/^\s*[-*]\s+/,""))+"</li>");i++;}o.push("<ul>"+it.join("")+"</ul>");continue;}
+  if(/^\s*$/.test(line)){i++;continue;}
+  var pa=[line];i++;while(i<L.length&&!/^\s*$/.test(L[i])&&!/^(#{1,6}\s|\s*[-*]\s+)/.test(L[i])){pa.push(L[i]);i++;}
+  o.push("<p>"+inl(pa.join(" "))+"</p>");}
+ return o.join("\n");}
+
+function txt(id,v){var e=document.getElementById(id);if(e)e.textContent=v;}
+var PLAY='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M10 8l5 3-5 3z" fill="currentColor" stroke="none"/></svg>';
+
+function render(){
+ var s=PUB[lang];document.documentElement.lang=lang;
+ document.getElementById("metaDesc").setAttribute("content",s.metaDesc);
+ txt("h-kick",s.hero.kicker);txt("h-title",s.hero.title);txt("h-sub",s.hero.sub);
+ document.getElementById("img-hero").setAttribute("alt",s.artHero);
+ txt("cta-join",s.ctaJoin);txt("cta-plan",s.ctaPlan);txt("cta-support",s.ctaSupport);
+ txt("planBtn",s.ctaPlan);txt("supBtn",s.ctaSupport);txt("printBtn",s.printLabel);
+ // situation
+ txt("sit-title",s.sitTitle);txt("sit-asof",s.sitAsOf);txt("sit-notemer",s.sitNotEmergency);txt("sit-warn",s.sitWarn);
+ document.getElementById("sit-rows").innerHTML=s.sitRows.map(function(r){var src=r.src.map(function(x){return '<a href="'+x.u+'" target="_blank" rel="noopener">'+x.t+'</a>';}).join(" · ");return '<div class="sitrow"><div class="sl">'+r.label+'</div><div class="st">'+r.text+'</div><div class="ss">'+src+'</div></div>';}).join("");
+ // how
+ txt("how-title",s.howTitle);
+ document.getElementById("flow").innerHTML=s.how.map(function(h){return '<div class="step"><div class="n">'+h.n+'</div><p>'+h.t+'</p></div>';}).join("");
+ // origen
+ txt("or-title",s.origin.title);txt("or-body",s.origin.body);
+ document.getElementById("or-chips").innerHTML=s.origin.chips.map(function(c){return '<span class="chip">'+c+'</span>';}).join("");
+ // principios
+ txt("pr-title",s.princ.title);txt("pr-sub",s.princ.sub);
+ document.getElementById("pr-grid").innerHTML=s.princ.items.map(function(x){return '<div class="pcard"><h3><span class="d"></span>'+x.t+'</h3><div class="b">'+x.b+'</div>'+(x.a?'<div class="a">'+x.a+'</div>':'')+'</div>';}).join("");
+ // arc
+ txt("arc-title",s.arcTitle);txt("arc-note",s.arcNote);
+ document.getElementById("arc").innerHTML=s.arc.map(function(a){return '<div class="phase"><div class="dot"></div><div class="w">'+a.w+'</div><div class="t">'+a.t+'</div></div>';}).join("");
+ // tracks
+ txt("tr-title",s.tracksTitle);txt("tr-sub",s.tracksSub);
+ document.getElementById("tk").innerHTML=s.tracks.map(function(t){return '<div class="tcard'+(t.l==="E"?" e":"")+'"><div class="head"><span class="letter">'+t.l+'</span><h3>'+t.n+'</h3></div><div class="b">'+t.b+'</div><span class="badge '+t.k+'">'+t.s+'</span></div>';}).join("");
+ // ecosystem
+ txt("eco-title",s.eco.title);txt("eco-intro",s.eco.intro);txt("eco-noreplace",s.eco.noReplace);txt("eco-verify",s.eco.verifyWarn);
+ txt("eco-trustedlabel",s.eco.trustedLabel);txt("eco-dirlabel",s.eco.dirLabel);txt("eco-foot",s.eco.checked+" · "+s.eco.footNote);
+ document.getElementById("eco-trusted").innerHTML=s.eco.trusted.map(function(t){var nm=t.url?('<a href="'+t.url+'" target="_blank" rel="noopener">'+t.name+'</a>'):('<strong>'+t.name+'</strong>');return '<li>'+nm+', '+t.desc+'</li>';}).join("");
+ document.getElementById("eco-dir").innerHTML=s.eco.items.map(function(it){return '<div class="tcard"><div class="head"><h3 style="font-size:1rem">'+it.cat+'</h3></div><div class="b">'+it.purpose+'</div><div style="margin-top:10px;font-family:var(--mono);font-size:.72rem;color:var(--muted);word-break:break-word">'+it.dom+'</div><div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px"><span class="badge wait">'+it.estado+'</span><span class="badge" style="background:var(--paper2);color:var(--muted)">'+it.sens+'</span></div><div class="b" style="font-size:.85rem;margin-top:8px">'+it.note+'</div></div>';}).join("");
+ // 30 day
+ txt("d30-title",s.d30Title);
+ document.getElementById("d30-list").innerHTML=s.d30.map(function(x){return '<li>'+x+'</li>';}).join("");
+ // wont
+ txt("wont-title",s.wontTitle);
+ document.getElementById("wont-list").innerHTML=s.wont.map(function(x){return '<li>'+x+'</li>';}).join("");
+ // momo
+ txt("momo-title",s.momoTitle);txt("momo-body",s.momoBody);
+ // support
+ txt("sup-title",s.supTitle);txt("sup-body",s.supBody);txt("sup-join",s.ctaJoin);
+ document.getElementById("sup-grid").innerHTML=s.sup.map(function(x){return '<div class="schip">'+x+'</div>';}).join("");
+ // reader
+ txt("r-title",s.readerTitle);txt("r-hint",s.readerHint);
+ document.getElementById("reader-view").innerHTML=renderMD(PUBDOC[lang]);
+ document.getElementById("printall").innerHTML='<div class="content">'+renderMD(PUBDOC[lang])+'</div>';
+ // footer
+ txt("foot-sub",s.footSub);
+ document.getElementById("foot-cc").innerHTML=(lang==="es"?'Con el apoyo de <a href="https://ve.creativecommons.net/" target="_blank" rel="noopener">Creative Commons Venezuela</a>':'Supported by <a href="https://ve.creativecommons.net/" target="_blank" rel="noopener">Creative Commons Venezuela</a>');
+ document.getElementById("foot-lic").innerHTML=(lang==="es"?'Contenido bajo <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener">CC BY-SA 4.0</a> · Conexión RedJIV':'Content under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a> · Conexión RedJIV');
+ document.getElementById("foot-ai").textContent=(lang==="es"?"Ilustraciones originales hechas con asistencia de IA. Sin imágenes de terceros.":"Original illustrations made with AI assistance. No third-party images.");
+ // discord + join hrefs
+ ["cta-join","sup-join","discBtn","foot-disc"].forEach(function(id){var e=document.getElementById(id);if(e)e.setAttribute("href",CFG.discord);});
+ document.getElementById("discBtn").textContent=s.discordLabel;
+ // mnav
+ var mn=(lang==="es")?[["situacion","Situación"],["origen","Origen"],["how","Cómo funciona"],["principios","Principios"],["arcband-s","Línea de tiempo"],["tracks","Tracks"],["ecosistema","Ecosistema"],["support","Apoyar"],["reader","Plan"]]:[["situacion","Situation"],["origen","Origins"],["how","How it works"],["principios","Principles"],["arcband-s","Timeline"],["tracks","Tracks"],["ecosistema","Ecosystem"],["support","Support"],["reader","Plan"]];
+ var mnh=mn.map(function(x){return '<a href="#'+x[0]+'">'+x[1]+'</a>';});mnh.push('<a href="'+CFG.discord+'" target="_blank" rel="noopener">Discord</a>');
+ document.getElementById("mnav").innerHTML=mnh.join("");
+}
+function setLang(l){lang=l;document.getElementById("bes").classList.toggle("on",l==="es");document.getElementById("ben").classList.toggle("on",l==="en");render();}
+
+document.getElementById("bes").addEventListener("click",function(){setLang("es");});
+document.getElementById("ben").addEventListener("click",function(){setLang("en");});
+document.getElementById("printBtn").addEventListener("click",function(){window.print();});
+document.getElementById("brandHome").addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"});});
+var mb=document.getElementById("menuBtn");
+mb.addEventListener("click",function(){var open=document.body.classList.toggle("menu-open");mb.setAttribute("aria-expanded",open?"true":"false");});
+document.getElementById("actions").addEventListener("click",function(e){var t=e.target;if(t.tagName==="A"||(t.tagName==="BUTTON"&&t.id!=="bes"&&t.id!=="ben")){document.body.classList.remove("menu-open");mb.setAttribute("aria-expanded","false");}});
+(function(){document.querySelectorAll(".imgslot").forEach(function(f){var src=f.getAttribute("data-src");var img=f.querySelector("img");var probe=new Image();probe.onload=function(){img.src=src;f.classList.add("has-photo");};probe.src=src;});})();
+
+(function(){var c=document.getElementById("field");if(!c)return;var ctx=c.getContext("2d");if(!ctx)return;if(window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+ var w,h,n,raf,dpr=Math.min(window.devicePixelRatio||1,2);
+ function size(){w=c.width=c.offsetWidth*dpr;h=c.height=c.offsetHeight*dpr;init();}
+ function init(){var k=Math.max(10,Math.min(22,Math.floor(w/110)));n=[];for(var i=0;i<k;i++)n.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.08*dpr,vy:(Math.random()-.5)*.08*dpr,r:(Math.random()*1.5+1.1)*dpr,warm:Math.random()<.6});}
+ function frame(){ctx.clearRect(0,0,w,h);for(var i=0;i<n.length;i++){var a=n[i];a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>w)a.vx*=-1;if(a.y<0||a.y>h)a.vy*=-1;}
+  for(var i=0;i<n.length;i++)for(var j=i+1;j<n.length;j++){var a=n[i],b2=n[j],dx=a.x-b2.x,dy=a.y-b2.y,d=Math.sqrt(dx*dx+dy*dy),mx=150*dpr;if(d<mx){var al=(1-d/mx)*.18;var g=ctx.createLinearGradient(a.x,a.y,b2.x,b2.y);g.addColorStop(0,"rgba(178,105,20,"+al+")");g.addColorStop(1,"rgba(19,117,99,"+al+")");ctx.strokeStyle=g;ctx.lineWidth=dpr;ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b2.x,b2.y);ctx.stroke();}}
+  for(var i=0;i<n.length;i++){var a=n[i];ctx.fillStyle=a.warm?"rgba(178,105,20,.8)":"rgba(19,117,99,.75)";ctx.beginPath();ctx.arc(a.x,a.y,a.r,0,7);ctx.fill();}
+  raf=requestAnimationFrame(frame);}
+ size();window.addEventListener("resize",function(){cancelAnimationFrame(raf);size();frame();});frame();})();
+
+(function(){if(!("IntersectionObserver" in window))return;if(window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches)return;
+ document.body.classList.add("js-reveal");
+ var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.08,rootMargin:"0px 0px -40px 0px"});
+ document.querySelectorAll("section, .arcband").forEach(function(el){el.classList.add("reveal");io.observe(el);});})();
+
+setLang("es");
+</script>
+</body>
+</html>
