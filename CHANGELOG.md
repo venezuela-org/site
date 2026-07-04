@@ -2,6 +2,7 @@
 
 ## v1.6 (letras = orden de arranque)
 
+- Nota de voz de bienvenida (tres minutos, en español) integrada en el hero de la página pública y en la portada del manual interno, con reproductor discreto que se oculta si el audio no está.
 - Reasignación de letras para que el alfabeto sea el orden de arranque: A la base, B mapa de necesidades, C agua limpia, D ecosistema y datos (arrancan ya); E salud y ánimo (tras salvaguardas), F tierra segura (si geociencias confirma).
 - Cambio aplicado de punta a punta: página pública, plan público ES/EN, resumen de talento, resumen ejecutivo, plan a 30 días, MVD y DoD (secciones reordenadas A a F), RACI y leads, riesgos, montaje de GitHub (carpetas tracks/A-base a F-riesgo), clasificación de datos, decisiones del comité, directorio del ecosistema, roster (grupos e ideas), diagramas del manual y su leyenda.
 

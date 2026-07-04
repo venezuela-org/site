@@ -78,6 +78,10 @@ section{padding:44px 0}
 .imgslot .art{width:100%;height:100%}
 .imgslot .art svg{width:100%;height:100%;display:block}
 .hero-img{margin-top:28px;aspect-ratio:21/9}
+.voicecard{margin-top:22px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px;max-width:560px;box-shadow:0 1px 2px rgba(36,31,25,.04),0 8px 24px rgba(36,31,25,.05)}
+.voicecard .vlbl{font-family:var(--mono);font-size:.6rem;letter-spacing:.11em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:8px}
+.voicecard .vlbl::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.voicecard audio{width:100%;margin-top:10px;display:block}
 .resumen{border:1px solid var(--line);background:#fff;border-radius:18px;padding:24px;box-shadow:0 1px 2px rgba(36,31,25,.04),0 8px 24px rgba(36,31,25,.05)}
 .resumen .eyebrow{font-family:var(--mono);font-size:.62rem;letter-spacing:.13em;text-transform:uppercase;color:var(--amber)}
 .resumen .rg{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:16px;margin-top:14px}
@@ -259,7 +263,7 @@ section{padding:44px 0}
 }
 @media(prefers-reduced-motion:reduce){ #field{display:none} *{transition:none!important;animation:none!important;scroll-behavior:auto!important} }
 @media print{
- .top,#field,.hero .glow,.ctas,.menu-btn,.foot .discord,.slidecard,.snote{display:none!important}
+ .top,#field,.hero .glow,.ctas,.menu-btn,.foot .discord,.slidecard,.snote,.voicecard{display:none!important}
  .hero,.statsband,#resumen,#origen,#how,#pasos,#principios,.arcband,#tracks,#ecosistema,#d30,#wont,#autoria,#support{display:none!important}
  .reader{background:#fff;border:0}.docwrap{border:0;padding:0}#reader-view{display:none!important}
  .printall{display:block!important}.printall .content{max-width:100%}
@@ -295,6 +299,7 @@ section{padding:44px 0}
    <a class="btn" id="cta-plan" href="#reader"></a>
    <a class="btn" id="cta-support" href="#support"></a>
   </div>
+  <div class="voicecard" id="voicecard"><span class="vlbl" id="voice-lbl"></span><audio controls preload="none" src="audio/bienvenida.mp3" id="voice-audio"></audio></div>
   <figure class="imgslot hero-img" data-src="img/portada.jpg"><img id="img-hero" alt=""><div class="art"><svg viewBox="0 0 840 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Red científica latinoamericana sobre un globo"><defs><linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EEE0"/><stop offset="1" stop-color="#F0E3D0"/></linearGradient><radialGradient id="glow" cx="70%" cy="52%" r="55%"><stop offset="0" stop-color="#F0CE92" stop-opacity=".5"/><stop offset="1" stop-color="#F0E3D0" stop-opacity="0"/></radialGradient><clipPath id="gc"><circle cx="600" cy="170" r="120"/></clipPath></defs><rect width="840" height="340" fill="url(#pg)"/><rect width="840" height="340" fill="url(#glow)"/><g stroke="#C6772A" stroke-width="1.3" opacity=".5"><line x1="70" y1="120" x2="180" y2="200"/><line x1="180" y1="200" x2="120" y2="280"/><line x1="180" y1="200" x2="300" y2="150"/><line x1="300" y1="150" x2="420" y2="210"/><line x1="420" y1="210" x2="480" y2="140"/></g><g><circle cx="70" cy="120" r="6" fill="#1E8A78"/><circle cx="180" cy="200" r="7" fill="#C6772A"/><circle cx="120" cy="280" r="5" fill="#1E8A78"/><circle cx="300" cy="150" r="6" fill="#C6772A"/><circle cx="420" cy="210" r="6" fill="#1E8A78"/><circle cx="480" cy="140" r="5" fill="#C6772A"/></g><circle cx="600" cy="170" r="120" fill="#1E8A78" opacity=".10"/><g clip-path="url(#gc)" stroke="#1E8A78" stroke-width="1.5" fill="none" opacity=".55"><ellipse cx="600" cy="170" rx="120" ry="40"/><ellipse cx="600" cy="170" rx="120" ry="80"/><ellipse cx="600" cy="170" rx="40" ry="120"/><ellipse cx="600" cy="170" rx="80" ry="120"/><line x1="480" y1="170" x2="720" y2="170"/></g><path d="M500 236 C 560 208, 640 208, 700 246" fill="none" stroke="#3FB0C9" stroke-width="4" stroke-linecap="round" opacity=".85"/><circle cx="600" cy="170" r="120" fill="none" stroke="#1E8A78" stroke-width="2"/><ellipse cx="600" cy="170" rx="165" ry="66" fill="none" stroke="#C6772A" stroke-width="2" opacity=".7"/><circle cx="435" cy="170" r="7" fill="#C6772A"/><circle cx="765" cy="170" r="7" fill="#1E8A78"/><circle cx="600" cy="104" r="6" fill="#3FB0C9"/></svg></div></figure>
  </div>
 </header>
@@ -441,6 +446,7 @@ function render(){
  document.getElementById("metaDesc").setAttribute("content",s.metaDesc);
  txt("h-kick",s.hero.kicker);txt("h-title",s.hero.title);txt("h-sub",s.hero.sub);
  document.getElementById("img-hero").setAttribute("alt",s.artHero);
+ txt("voice-lbl",(lang==="es")?"La propuesta en tres minutos":"The proposal in three minutes (Spanish)");
  txt("cta-join",s.ctaJoin);txt("cta-plan",s.ctaPlan);txt("cta-support",s.ctaSupport);
  txt("planBtn",s.ctaPlan);txt("supBtn",s.ctaSupport);txt("printBtn",s.printLabel);
  // situation
@@ -541,6 +547,7 @@ function startCounters(){var els=document.querySelectorAll(".stat .n");var rm=wi
  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.08,rootMargin:"0px 0px -40px 0px"});
  document.querySelectorAll("section, .arcband").forEach(function(el){el.classList.add("reveal");io.observe(el);});})();
 
+(function(){var a=document.getElementById("voice-audio");if(!a)return;a.addEventListener("error",function(){var c=document.getElementById("voicecard");if(c)c.style.display="none";});})();
 setLang("es");
 </script>
 </body>
