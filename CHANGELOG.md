@@ -1,5 +1,16 @@
 # Changelog
 
+## v1.3 (engagement y una sola identidad visual)
+
+- Página pública rediseñada para enganchar a estudiantes y académicos, con palancas honestas: identidad, concreción, autoría, entrada de baja fricción y prueba social real.
+- Nueva banda de cifras reales de la red: 48 investigadores, 9 disciplinas, 14 países, 6 tracks, con conteo animado (respeta reduced motion).
+- Chip de "Próximo sprint" en el hero, con la fecha real y los días que faltan, calculado en el navegador (10 jul, 24 jul, 7 ago 2026).
+- Sección "Empieza en 3 pasos" (Discord, track y horas, primer entregable) con CTA directa.
+- Nueva sección "Tu nombre, primero": la autoría como incentivo central, con una ilustración original de un paper con el primer autor resaltado y DOI en Zenodo.
+- Motivo de marca compartido: anillos sísmicos concéntricos y regla degradada ámbar a teal bajo los títulos.
+- `ops.html` alineado al mismo lenguaje visual (misma regla degradada, sombras, mini banda de cifras, cinta teal de manual interno) para que ambas páginas se sientan un solo producto.
+- Menú simplificado: Situación, Origen, Empezar, Tracks, Ecosistema, Autoría, Apoyar, Plan.
+
 ## v1.2 (origen y principios)
 
 - Se quitó la sección de Presentaciones. Eran dos enlaces de Google Slides sin contenido claro y no aportaban.
