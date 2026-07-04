@@ -282,6 +282,7 @@ section{padding:44px 0}
   <a class="tbtn" id="planBtn" href="#reader"></a>
   <a class="tbtn" id="supBtn" href="#support"></a>
   <a class="tbtn discord" id="discBtn" href="#" target="_blank" rel="noopener">Discord</a>
+  <a class="tbtn" id="ghBtn" href="https://github.com/venezuela-org" target="_blank" rel="noopener">GitHub</a>
   <button class="tbtn" id="printBtn"></button>
   <nav class="mnav" id="mnav" aria-label="Secciones"></nav>
  </div>
@@ -419,7 +420,7 @@ section{padding:44px 0}
 <div class="foot">
  <span class="f">Conexión RedJIV</span><span class="mono2" id="foot-sub"></span>
  <div style="margin-top:14px"><a class="tbtn discord" id="foot-disc" href="#" target="_blank" rel="noopener">Discord</a></div>
- <div class="footlinks"><span id="foot-cc"></span><span id="foot-lic"></span></div>
+ <div class="footlinks"><span id="foot-cc"></span><span id="foot-lic"></span><span><a href="https://github.com/venezuela-org" target="_blank" rel="noopener">GitHub · venezuela-org</a></span></div>
  <span class="foot-ai" id="foot-ai"></span>
 </div>
 
@@ -510,7 +511,7 @@ function render(){
  document.getElementById("discBtn").textContent=s.discordLabel;
  // mnav
  var mn=(lang==="es")?[["resumen","Resumen"],["situacion","Situación"],["origen","Origen"],["pasos","Empezar"],["tracks","Tracks"],["ecosistema","Ecosistema"],["autoria","Autoría"],["support","Apoyar"],["reader","Plan"]]:[["resumen","Summary"],["situacion","Situation"],["origen","Origins"],["pasos","Start"],["tracks","Tracks"],["ecosistema","Ecosystem"],["autoria","Authorship"],["support","Support"],["reader","Plan"]];
- var mnh=mn.map(function(x){return '<a href="#'+x[0]+'">'+x[1]+'</a>';});mnh.push('<a href="'+CFG.discord+'" target="_blank" rel="noopener">Discord</a>');
+ var mnh=mn.map(function(x){return '<a href="#'+x[0]+'">'+x[1]+'</a>';});mnh.push('<a href="'+CFG.discord+'" target="_blank" rel="noopener">Discord</a>');mnh.push('<a href="https://github.com/venezuela-org" target="_blank" rel="noopener">GitHub</a>');
  document.getElementById("mnav").innerHTML=mnh.join("");
 }
 function setLang(l){lang=l;document.getElementById("bes").classList.toggle("on",l==="es");document.getElementById("ben").classList.toggle("on",l==="en");render();}
