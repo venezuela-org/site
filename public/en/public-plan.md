@@ -20,16 +20,16 @@ We run the effort as an emergency edition of CoAfina, a Latin American open-data
 
 ## The tracks
 
-- A Needs and access map: see where help is missing and how to get there, with open data.
-- B Safe ground: aftershock risk and safe-siting criteria.
+- A The backbone: connects, coordinates and holds up the rest.
+- B Needs and access map: see where help is missing and how to get there, joining the mapping that already exists.
 - C Clean water: safe-water and sanitation guide for shelters.
-- D Health and spirit: health care and psychosocial support.
-- E The backbone: connects, coordinates and holds up the rest.
-- F Ecosystem and data: order, verify and connect the platforms that already exist, without duplicating sensitive data.
+- D Ecosystem and data: order, verify and connect the platforms that already exist, without duplicating sensitive data.
+- E Health and spirit: health care and psychosocial support.
+- F Safe ground: aftershock risk and safe-siting criteria.
 
 ## A realistic start
 
-We begin with E, A, C and F. Track D starts once privacy and ethics safeguards are ready. Track B starts if geoscience specialists confirm availability and data. Each track has a first deliverable that can be done remotely.
+We begin with A, B, C and D, in that order: the letters follow the start order. Track E starts once privacy and ethics safeguards are ready. Track F starts if geoscience specialists confirm availability and data. Each track has a first deliverable that can be done remotely.
 
 ## What we will deliver in 30 days
 

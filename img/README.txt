@@ -1,2 +1,2 @@
-ccve.png: ilustracion de Creative Commons Venezuela (Apoyar + vista previa social).
-Opcionales: portada.jpg (hero), foto-1.jpg, foto-2.jpg, foto-3.jpg.
+ccve.png: ilustracion CC Venezuela (Apoyar + preview social).
+Opcionales: portada.jpg, foto-1.jpg, foto-2.jpg, foto-3.jpg.

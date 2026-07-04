@@ -20,8 +20,8 @@ La mayoría ya ha propuesto al menos una idea de proyecto.
 
 ## Cómo se conecta con los tracks
 
-- Arrancan ya: E la base, A mapa, C agua, F ecosistema.
-- Entran con condiciones: D salud, B riesgo geológico.
+- Arrancan ya: A la base, B mapa, C agua, D ecosistema.
+- Entran con condiciones: E salud, F riesgo geológico.
 
 ## Nota de privacidad
 
@@ -51,8 +51,8 @@ Most have already proposed at least one project idea.
 
 ## How it maps to the tracks
 
-- Start now: E the backbone, A map, C water, F ecosystem.
-- Conditional: D health, B geological risk.
+- Start now: A the backbone, B map, C water, D ecosystem.
+- Conditional: E health, F geological risk.
 
 ## Privacy note
 

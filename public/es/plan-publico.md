@@ -20,16 +20,16 @@ Corremos el esfuerzo como una edición de emergencia de CoAfina, un hackathon de
 
 ## Los tracks
 
-- A Mapa de necesidades y accesos: ver dónde falta ayuda y cómo llegar, con datos abiertos.
-- B Tierra segura: riesgo de réplicas y criterios de sitio seguro.
+- A La base: une, coordina y sostiene a los demás.
+- B Mapa de necesidades y accesos: ver dónde falta ayuda y cómo llegar, sumándonos al mapeo que ya existe.
 - C Agua limpia: guía de agua segura y saneamiento para refugios.
-- D Salud y ánimo: cuidado de la salud y apoyo psicosocial.
-- E La base: une, coordina y sostiene a los demás.
-- F Ecosistema y datos: ordenar, verificar y conectar las plataformas que ya existen, sin duplicar datos sensibles.
+- D Ecosistema y datos: ordenar, verificar y conectar las plataformas que ya existen, sin duplicar datos sensibles.
+- E Salud y ánimo: cuidado de la salud y apoyo psicosocial.
+- F Tierra segura: riesgo de réplicas y criterios de sitio seguro.
 
 ## Arranque realista
 
-Empezamos con E, A, C y F. El track D arranca cuando estén listas las salvaguardas de privacidad y ética. El track B arranca si los especialistas de geociencias confirman disponibilidad y datos. Cada track tiene un primer entregable que se puede hacer a distancia.
+Empezamos con A, B, C y D, en ese orden: las letras siguen el orden de arranque. El track E arranca cuando estén listas las salvaguardas de privacidad y ética. El track F arranca si los especialistas de geociencias confirman disponibilidad y datos. Cada track tiene un primer entregable que se puede hacer a distancia.
 
 ## Qué entregaremos en 30 días
 

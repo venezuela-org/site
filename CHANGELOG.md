@@ -1,9 +1,14 @@
 # Changelog
 
+## v1.6 (letras = orden de arranque)
+
+- Reasignación de letras para que el alfabeto sea el orden de arranque: A la base, B mapa de necesidades, C agua limpia, D ecosistema y datos (arrancan ya); E salud y ánimo (tras salvaguardas), F tierra segura (si geociencias confirma).
+- Cambio aplicado de punta a punta: página pública, plan público ES/EN, resumen de talento, resumen ejecutivo, plan a 30 días, MVD y DoD (secciones reordenadas A a F), RACI y leads, riesgos, montaje de GitHub (carpetas tracks/A-base a F-riesgo), clasificación de datos, decisiones del comité, directorio del ecosistema, roster (grupos e ideas), diagramas del manual y su leyenda.
+
 ## v1.5 (propuesta en consenso)
 
 - Reencuadre honesto: la página deja claro que esto es una propuesta abierta que busca el consenso de la red, no un programa lanzado.
-- Fuera todas las fechas duras de sprints (10 jul, 24 jul, 7 ago): ahora se habla de encuentros quincenales y semanas contadas desde el arranque, previsto en julio con fechas por acordar. El contador del hero pasa a un chip de estado.
+- Fuera todas las fechas concretas de sprints: ahora se habla de encuentros quincenales y semanas contadas desde el arranque, previsto en julio con fechas por acordar. El contador del hero pasa a un chip de estado.
 - Nuevo resumen de la propuesta al inicio de la página: qué es, cómo, arranque, qué entrega en 30 días, y el estado (propuesta abierta).
 - Tracks reordenados A a F, con la aclaración de que las letras son nombres, no prioridad; los badges dicen cuándo arranca cada uno.
 - El manual interno pasa de ops.html a index.html, de modo que la URL de Pages del repositorio privado sirva el manual directamente.
@@ -21,7 +26,7 @@
 
 - Página pública rediseñada para enganchar a estudiantes y académicos, con palancas honestas: identidad, concreción, autoría, entrada de baja fricción y prueba social real.
 - Nueva banda de cifras reales de la red: 48 investigadores, 9 disciplinas, 14 países, 6 tracks, con conteo animado (respeta reduced motion).
-- Chip de "Próximo sprint" en el hero, con la fecha real y los días que faltan, calculado en el navegador (10 jul, 24 jul, 7 ago 2026).
+- Chip de "Próximo sprint" en el hero con conteo de días (retirado después en la v1.5 al pasar a propuesta sin fechas).
 - Sección "Empieza en 3 pasos" (Discord, track y horas, primer entregable) con CTA directa.
 - Nueva sección "Tu nombre, primero": la autoría como incentivo central, con una ilustración original de un paper con el primer autor resaltado y DOI en Zenodo.
 - Motivo de marca compartido: anillos sísmicos concéntricos y regla degradada ámbar a teal bajo los títulos.
