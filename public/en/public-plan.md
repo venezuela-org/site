@@ -16,7 +16,7 @@ Conexión RedJIV does not start from scratch. It grows from the spirit of CoAfin
 
 ## The model: a long-term hackathon
 
-We run the effort as an emergency edition of CoAfina, a Latin American open-data hackathon, adapted: it does not last a weekend, it lasts until we help rebuild. The network's meetings are the sprints: July 10, July 24 and August 7.
+We run the effort as an emergency edition of CoAfina, a Latin American open-data hackathon, adapted: it does not last a weekend, it lasts until we help rebuild. The network's biweekly meetings are the sprints, counted from week 1 of the start, expected in July 2026 with dates to be agreed by the network.
 
 ## The tracks
 

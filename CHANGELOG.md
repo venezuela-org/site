@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.5 (propuesta en consenso)
+
+- Reencuadre honesto: la página deja claro que esto es una propuesta abierta que busca el consenso de la red, no un programa lanzado.
+- Fuera todas las fechas duras de sprints (10 jul, 24 jul, 7 ago): ahora se habla de encuentros quincenales y semanas contadas desde el arranque, previsto en julio con fechas por acordar. El contador del hero pasa a un chip de estado.
+- Nuevo resumen de la propuesta al inicio de la página: qué es, cómo, arranque, qué entrega en 30 días, y el estado (propuesta abierta).
+- Tracks reordenados A a F, con la aclaración de que las letras son nombres, no prioridad; los badges dicen cuándo arranca cada uno.
+- El manual interno pasa de ops.html a index.html, de modo que la URL de Pages del repositorio privado sirva el manual directamente.
+
 ## v1.4 (referencias en terreno y cierre)
 
 - Canales establecidos con referencias específicas de Venezuela, verificadas: guía del CICR para afectados (con teléfonos de búsqueda de la Cruz Roja Venezolana), UNICEF LAC, OCHA Venezuela, ReliefWeb (página del desastre) y Cáritas Venezuela.
