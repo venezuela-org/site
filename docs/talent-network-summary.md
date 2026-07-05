@@ -4,7 +4,7 @@ Público y agregado. No incluye nombres, correos, teléfonos, ubicaciones person
 
 ## Tamaño y composición
 
-La red reúne alrededor de 48 investigadores e investigadoras, en su mayoría en etapas tempranas de carrera. Combina personas dentro de Venezuela y en la diáspora, repartidas en más de una decena de países de Europa y América.
+La Red de Jóvenes Investigadores de Venezuela (RedJIV), un grupo de la ACFIMAN, reúne alrededor de 48 investigadores e investigadoras, en su mayoría en etapas tempranas de carrera. Combina personas dentro de Venezuela y en la diáspora, repartidas en más de una decena de países de Europa y América.
 
 Por área de conocimiento (aproximado):
 
@@ -35,7 +35,7 @@ Public and aggregate. It does not include names, emails, phone numbers, personal
 
 ## Size and composition
 
-The network brings together around 48 researchers, most of them early-career. It combines people inside Venezuela and across the diaspora, spread over more than a dozen countries in Europe and the Americas.
+The Network of Young Venezuelan Researchers (RedJIV), a group of ACFIMAN, brings together around 48 researchers, most of them early-career. It combines people inside Venezuela and across the diaspora, spread over more than a dozen countries in Europe and the Americas.
 
 By field of knowledge (approximate):
 

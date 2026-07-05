@@ -4,7 +4,7 @@ Documento público y seguro. No incluye nombres de personas dentro de Venezuela,
 
 ## Qué es
 
-La reacción de una red de jóvenes investigadores venezolanos, dentro y fuera del país, a los terremotos del 24 de junio de 2026. Ponemos talento y conocimiento a producir cosas útiles a distancia, canalizando todo a través de organismos ya establecidos. No hacemos rescate ni improvisamos en la zona.
+La reacción de la Red de Jóvenes Investigadores de Venezuela (RedJIV), un grupo de la Academia de Ciencias Físicas, Matemáticas y Naturales (ACFIMAN), con miembros dentro y fuera del país, a los terremotos del 24 de junio de 2026. Ponemos talento y conocimiento a producir cosas útiles a distancia, canalizando todo a través de organismos ya establecidos. No hacemos rescate ni improvisamos en la zona.
 
 ## Perfil bajo por diseño
 
@@ -16,7 +16,7 @@ Conexión RedJIV no empieza de cero. Nace del mismo espíritu de CoAfina y del h
 
 ## El modelo: un hackathon de largo plazo
 
-Corremos el esfuerzo como una edición de emergencia de CoAfina, un hackathon de datos abiertos de América Latina, adaptado: no dura un fin de semana, dura hasta ayudar a reconstruir. Los encuentros quincenales de la red son los sprints, contados desde la semana 1 del arranque, previsto para julio de 2026 y con fechas por acordar en la red.
+Corremos el esfuerzo como una edición de emergencia de CoAfina, un hackathon de datos abiertos de América Latina, adaptado: no dura un fin de semana, dura hasta ayudar a reconstruir. Y es distribuido: nadie viaja; nos reunimos en línea, y el Discord es el punto de encuentro, con canales por grupo y por track. Los encuentros quincenales de la red son los sprints, contados desde la semana 1 del arranque, previsto para agosto de 2026 y con fechas por acordar en la red.
 
 ## Los tracks
 

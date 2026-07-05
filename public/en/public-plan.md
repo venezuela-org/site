@@ -4,7 +4,7 @@ Public, safe document. It does not include names of people inside Venezuela, loc
 
 ## What it is
 
-The response of a network of young Venezuelan researchers, inside and outside the country, to the earthquakes of June 24, 2026. We put talent and knowledge to work remotely on useful things, channeling everything through already-established bodies. We do not do rescue or improvise in the zone.
+The response of the Network of Young Venezuelan Researchers (RedJIV), a group of ACFIMAN, Venezuela's Academy of Physical, Mathematical and Natural Sciences, with members inside and outside the country, to the earthquakes of June 24, 2026. We put talent and knowledge to work remotely on useful things, channeling everything through already-established bodies. We do not do rescue or improvise in the zone.
 
 ## Low profile by design
 
@@ -16,7 +16,7 @@ Conexión RedJIV does not start from scratch. It grows from the spirit of CoAfin
 
 ## The model: a long-term hackathon
 
-We run the effort as an emergency edition of CoAfina, a Latin American open-data hackathon, adapted: it does not last a weekend, it lasts until we help rebuild. The network's biweekly meetings are the sprints, counted from week 1 of the start, expected in July 2026 with dates to be agreed by the network.
+We run the effort as an emergency edition of CoAfina, a Latin American open-data hackathon, adapted: it does not last a weekend, it lasts until we help rebuild. And it is distributed: nobody travels; we meet online, and Discord is the meeting point, with channels per group and per track. The network's biweekly meetings are the sprints, counted from week 1 of the start, expected in August 2026 with dates to be agreed by the network.
 
 ## The tracks
 
