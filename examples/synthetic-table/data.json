@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "description": "Fictional learning data. Not observations, people, aid needs or operational information.",
+  "rows": [
+    { "category": "A", "count": 2 },
+    { "category": "B", "count": 3 },
+    { "category": "A", "count": 4 },
+    { "category": "C", "count": 1 },
+    { "category": "B", "count": 2 }
+  ]
+}

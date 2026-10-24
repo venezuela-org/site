@@ -1,5 +1,7 @@
 # Resumen de la red de talento
 
+Contexto histórico agregado (julio de 2026). No es un directorio vigente ni una lista de personas disponibles para mentoría.
+
 Público y agregado. No incluye nombres, correos, teléfonos, ubicaciones personales ni afiliaciones individuales. El inventario detallado es privado y solo para la coordinación.
 
 ## Tamaño y composición
@@ -20,8 +22,7 @@ La mayoría ya ha propuesto al menos una idea de proyecto.
 
 ## Cómo se conecta con los tracks
 
-- Arrancan ya: A la base, B mapa, C agua, D ecosistema.
-- Entran con condiciones: E salud, F riesgo geológico.
+Las rutas A–F orientan propuestas de trabajo; no indican proyectos activos ni disponibilidad de revisión. El calendario y las salvaguardas se acuerdan con la comunidad.
 
 ## Nota de privacidad
 
@@ -30,6 +31,8 @@ Los datos personales de los miembros se tratan como información privada de coor
 ---
 
 # Talent network summary
+
+Historical aggregate context (July 2026). Not a current directory or a list of people available for mentorship.
 
 Public and aggregate. It does not include names, emails, phone numbers, personal locations or individual affiliations. The detailed inventory is private and for coordinators only.
 
@@ -51,8 +54,7 @@ Most have already proposed at least one project idea.
 
 ## How it maps to the tracks
 
-- Start now: A the backbone, B map, C water, D ecosystem.
-- Conditional: E health, F geological risk.
+Routes A–F orient proposed work; they do not indicate active projects or review availability. Scheduling and safeguards must be agreed with the community.
 
 ## Privacy note
 

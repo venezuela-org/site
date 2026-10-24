@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0 (propuesta de hub para estudiantes)
+
+- Página ES/EN con contenido estático, seis primeras contribuciones de 60–120 minutos y guías imprimibles con enlaces de contacto.
+- Filtros progresivos por interés y tiempo; mensaje editable para presentarse, sin almacenamiento ni envío.
+- Criterios de revisión, límites de alcance, crédito justo y expectativas explícitas sobre revisión, financiación y calendario.
+- Retirados el arranque vencido, las promesas de primer autor/premios y el directorio ciudadano no verificado; se conservan puertas de entrada institucionales.
+- Sin fuentes remotas ni animaciones decorativas; foco visible, colores con contraste e impresión independiente del filtro.
+- Fuente bilingüe única, generación determinista, pruebas sin dependencias, CI y plantillas de contribución.
+
+Las entradas anteriores son historia del proyecto, no anuncios vigentes. / Earlier entries are historical records, not current announcements.
+
 ## v1.6 (letras = orden de arranque)
 
 - Nota de voz de bienvenida (tres minutos, en español) integrada en el hero de la página pública y en la portada del manual interno, con reproductor discreto que se oculta si el audio no está.
