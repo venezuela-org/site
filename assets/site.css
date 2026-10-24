@@ -285,6 +285,7 @@ textarea:focus-visible,select:focus-visible {
 }
 .quickstart a {
   color:#b5e5d6;
+  outline-color:currentColor;
   display:inline-block;
   margin-top:1.25rem;
   font-size:.9rem;
