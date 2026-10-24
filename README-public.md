@@ -1,17 +1,11 @@
-# Conexión RedJIV · Sitio público
+# Conexión RedJIV · Paquete público / Public package
 
-Este paquete es solo para publicar. Contiene únicamente material público y seguro: la página (`index.html`), el plan público (`public/`), un resumen agregado de la red (`docs/talent-network-summary.md`), la licencia y el registro de cambios.
+La documentación de entrada está en [README.md](README.md), con rutas para estudiantes, desarrollo y publicación. / Start with [README.md](README.md) for student pathways, development and publishing.
 
-No contiene datos de coordinación ni información sensible. Los documentos de operación (nombres, roster, intake, RACI, gobernanza, riesgos, montaje de GitHub, presupuesto, decisiones) viven en un paquete privado aparte y no deben publicarse.
+Publica solo este paquete. Los inventarios de miembros, contactos y documentos operativos privados pertenecen a otro espacio y no deben añadirse al repositorio, su historial, issues ni capturas. / Publish only this public package. Member inventories, contacts and private operational documents belong elsewhere and must not enter the repository, history, issues or screenshots.
 
-## Publicar de forma segura
+Para compartir sin conexión, imprime la [guía en español](https://venezuela-org.github.io/site/guia/) o la [guía en inglés](https://venezuela-org.github.io/site/en/guide/), que incluyen las direcciones para sumarse. / For offline sharing, print a guide with contact addresses.
 
-Sube solo este paquete a un repositorio público, o a una rama o sitio que no contenga ninguna carpeta privada. Luego ve a Settings, Pages y elige esa fuente. Nunca publiques desde un repositorio que también contenga la carpeta privada. Para compartir sin conexión o donde haya bloqueos, imprime `index.html` a PDF.
+No es un servicio de emergencia. / Not an emergency service.
 
-## Esto no es un servicio de emergencia
-
-La página lo dice de forma visible. Para una emergencia, usa los canales oficiales.
-
-## Licencia
-
-Contenido bajo CC BY-SA 4.0. Conexión RedJIV, con el apoyo de Creative Commons Venezuela (https://ve.creativecommons.net/). Ilustraciones vectoriales originales con asistencia de IA; la ilustración de Apoyar es material de Creative Commons Venezuela.
+Contenido bajo [CC BY-SA 4.0](LICENSE.md). Conexión RedJIV, con el apoyo de Creative Commons Venezuela.

@@ -1,0 +1,693 @@
+{
+  "shared": {
+    "name": "Conexión RedJIV",
+    "url": "https://venezuela-org.github.io/site/",
+    "repo": "https://github.com/venezuela-org/site",
+    "discord": "https://discord.gg/yWhUUvrhpj",
+    "updated": "2026-10-24",
+    "resources": [
+      {
+        "id": "icrc",
+        "url": "https://www.icrc.org/es/donde-trabajamos/venezuela",
+        "name": {
+          "es": "CICR · Venezuela",
+          "en": "ICRC · Venezuela"
+        },
+        "description": {
+          "es": "Información institucional y vías de contacto para asistencia y restablecimiento de contacto familiar.",
+          "en": "Institutional information and contact routes for assistance and restoring family contact."
+        }
+      },
+      {
+        "id": "unicef",
+        "url": "https://www.unicef.org/venezuela/",
+        "name": {
+          "es": "UNICEF · Venezuela",
+          "en": "UNICEF · Venezuela"
+        },
+        "description": {
+          "es": "Información institucional sobre derechos y protección de la niñez.",
+          "en": "Institutional information about children’s rights and protection."
+        }
+      },
+      {
+        "id": "hot",
+        "url": "https://tasks.hotosm.org/",
+        "name": {
+          "es": "HOT · Tasking Manager",
+          "en": "HOT · Tasking Manager"
+        },
+        "description": {
+          "es": "Proyectos de mapeo humanitario. Comprueba cuáles están activos y sigue su formación e instrucciones.",
+          "en": "Humanitarian mapping projects. Check which are active and follow their training and instructions."
+        }
+      },
+      {
+        "id": "usgs",
+        "url": "https://earthquake.usgs.gov/earthquakes/",
+        "name": {
+          "es": "USGS · Terremotos",
+          "en": "USGS · Earthquakes"
+        },
+        "description": {
+          "es": "Información sísmica con fecha y fuentes. No sustituye las indicaciones de las autoridades locales.",
+          "en": "Dated seismic information and sources. It does not replace instructions from local authorities."
+        }
+      }
+    ]
+  },
+  "languages": {
+    "es": {
+      "title": "Tu primera contribución científica empieza aquí.",
+      "description": "Una puerta de entrada para estudiantes: tareas pequeñas, datos públicos y resultados que se pueden revisar. Conexión RedJIV, una propuesta de colaboración científica remota.",
+      "nav": {
+        "tasks": "Explorar tareas",
+        "start": "Cómo empezar",
+        "resources": "Recursos",
+        "plan": "El plan",
+        "guide": "Guía para estudiantes",
+        "menu": "Menú",
+        "label": "Navegación principal",
+        "language": "Idioma",
+        "skip": "Saltar al contenido"
+      },
+      "eyebrow": "Ciencia abierta · Desde donde estés",
+      "heroLead": "No necesitas un paper, saber programar ni tener todas las respuestas. Empieza con una tarea acotada y comparte algo que otra persona pueda comprobar.",
+      "heroPrimary": "Encuentra tu primera tarea",
+      "heroSecondary": "Lee la guía de contribución",
+      "heroArt": "Una red científica conectada alrededor de un globo.",
+      "proposal": "Propuesta abierta a la comunidad",
+      "statusText": "Las tareas de esta página son propuestas para aprender y contribuir. La asignación, la revisión y el calendario se acuerdan con la comunidad; no hay un lanzamiento confirmado.",
+      "emergency": "Esto no es un servicio de emergencia.",
+      "emergencyMore": "Para asistencia urgente, usa los canales oficiales de tu localidad. Aquí trabajamos a distancia con información pública.",
+      "quickTitle": "¿Tienes una hora?",
+      "quickBody": "Puedes comprobar una fuente, mejorar una explicación o reproducir un ejemplo. No necesitas comprometerte a un proyecto entero.",
+      "quickLink": "Ver tareas de 60 minutos",
+      "facts": [
+        [
+          "60–120 min",
+          "para un primer borrador"
+        ],
+        [
+          "6 rutas",
+          "con entregables concretos"
+        ],
+        [
+          "0 viajes",
+          "colaboración a distancia"
+        ]
+      ],
+      "tasksTitle": "Una tarea pequeña. Un resultado concreto.",
+      "tasksIntro": "Elige según lo que te interesa y el tiempo que tienes. Todas son aptas para empezar; ninguna requiere datos personales ni trabajo en terreno.",
+      "filterSkill": "Me interesa",
+      "filterTime": "Tiempo disponible",
+      "skills": {
+        "all": "Todo",
+        "data": "Datos y mapas",
+        "writing": "Lectura y escritura",
+        "code": "Código y reproducibilidad",
+        "design": "Diseño y accesibilidad"
+      },
+      "times": {
+        "all": "Hasta 2 horas",
+        "60": "Hasta 1 hora"
+      },
+      "reset": "Mostrar todas",
+      "result": "tareas disponibles",
+      "empty": "No hay tareas con esa combinación. Prueba otra opción o muestra todas.",
+      "deliverable": "Vas a entregar",
+      "done": "Está listo para revisión cuando…",
+      "scope": "El límite de la tarea",
+      "details": "Ver alcance y criterios",
+      "choose": "Preparar mi presentación",
+      "brief": "Leer la ficha completa",
+      "minutes": "min",
+      "beginner": "Para empezar",
+      "proposed": "Propuesta · confirma antes de ampliar",
+      "startTitle": "Del interés al primer borrador.",
+      "startIntro": "No hace falta pedir permiso para leer, practicar o preparar un ejemplo con datos públicos. Antes de invertir más tiempo, confirma que la tarea sigue siendo útil y que alguien puede revisarla.",
+      "steps": [
+        [
+          "Elige una tarea",
+          "Abre su ficha. Comprueba el alcance, el resultado esperado y qué queda fuera. Puedes empezar sin experiencia previa."
+        ],
+        [
+          "Preséntate y confirma",
+          "Comparte la tarea y tu disponibilidad por Discord o abre una propuesta en GitHub. Pide confirmar prioridad y una persona revisora; no publiques datos personales."
+        ],
+        [
+          "Comparte un borrador revisable",
+          "Incluye el resultado, tus fuentes y fechas, cómo comprobarlo y lo que todavía no sabes. Un borrador honesto también aporta."
+        ]
+      ],
+      "introLabel": "Mensaje para empezar",
+      "introHelp": "Edita el texto y compártelo por Discord. No se envía ni se guarda en esta página. Si la invitación no funciona, usa una propuesta en GitHub.",
+      "introTemplate": "Hola, soy estudiante y me gustaría contribuir en: {task}.\nPuedo dedicar [horas por semana] durante [periodo].\nMi primer borrador sería: [entregable].\n¿Sigue siendo útil esta tarea? ¿Hay alguien disponible para revisarla?\nTrabajaré solo con información pública, sin datos personales.",
+      "defaultTask": "[nombre de la tarea]",
+      "copy": "Copiar mensaje",
+      "copied": "Mensaje copiado.",
+      "copyError": "No se pudo copiar. Selecciona el texto y cópialo manualmente.",
+      "prepared": "Mensaje preparado para:",
+      "discord": "Entrar al Discord",
+      "githubProposal": "Proponer en GitHub",
+      "noGithub": "¿Sin GitHub? Puedes preparar el mismo borrador como documento y acordar la entrega por Discord.",
+      "qualityTitle": "Que tu trabajo sirva a quien viene después.",
+      "qualityIntro": "No se evalúa por lo grande que parece. Se revisa por lo claro, comprobable y seguro que resulta.",
+      "quality": [
+        [
+          "Fuentes y fechas",
+          "Enlaza el origen de cada dato e indica cuándo lo consultaste. Si no pudiste verificarlo, dilo."
+        ],
+        [
+          "Algo que se pueda revisar",
+          "Comparte el archivo, enlace o cambio y los pasos para comprobarlo. Explica sus límites."
+        ],
+        [
+          "Crédito justo",
+          "Documenta qué aportó cada persona. La autoría y el orden se acuerdan según las contribuciones; no se garantiza primer autor, DOI, mentoría ni premios."
+        ],
+        [
+          "Privacidad desde el inicio",
+          "No incluyas nombres de víctimas, contactos privados, historias clínicas, datos de menores ni ubicaciones de personas vulnerables."
+        ]
+      ],
+      "resourcesTitle": "Empieza por fuentes institucionales.",
+      "resourcesIntro": "Estas son puertas de entrada, no una lista de servicios avalados ni una garantía de disponibilidad. Verifica la fecha, el alcance y la información en el sitio de origen antes de actuar.",
+      "resourceNote": "Se retiraron del directorio público los servicios ciudadanos cuya identidad y tratamiento de datos no estaban verificados. No pedimos ni alojamos registros de personas.",
+      "planTitle": "El propósito, sin letra pequeña.",
+      "planIntro": "Conexión RedJIV es una propuesta vinculada a la Red de Jóvenes Investigadores de Venezuela (RedJIV), un grupo de la ACFIMAN. Busca conectar estudiantes e investigadores con contribuciones científicas remotas de utilidad pública.",
+      "planParagraphs": [
+        "El contexto original fue la respuesta a los terremotos de Venezuela de junio de 2026. Esta página no publica balances de víctimas ni alertas en tiempo real. Para información actual, consulta las fuentes institucionales.",
+        "El modelo propuesto es un esfuerzo distribuido con entregables pequeños y revisables. Los encuentros, la disponibilidad de revisión y cualquier trabajo posterior se confirman con la comunidad. No hay una fecha de inicio ni financiación confirmadas en esta página.",
+        "La red puede aportar documentación, fuentes, código reproducible y análisis de datos abiertos. No realiza rescate, diagnósticos, atención clínica ni evaluaciones de seguridad de edificios. Los materiales de salud, agua y riesgo necesitan revisión especializada antes de cualquier uso operativo."
+      ],
+      "tracksTitle": "Seis rutas para orientar el trabajo",
+      "tracks": [
+        [
+          "A",
+          "La base",
+          "Documentación, organización y contribución."
+        ],
+        [
+          "B",
+          "Mapas y necesidades",
+          "Aprender del mapeo existente, sin crear registros de personas."
+        ],
+        [
+          "C",
+          "Agua limpia",
+          "Revisar fuentes públicas; cualquier guía práctica requiere revisión experta."
+        ],
+        [
+          "D",
+          "Ecosistema y datos",
+          "Verificar fuentes y hacer análisis reproducibles."
+        ],
+        [
+          "E",
+          "Salud y ánimo",
+          "Bibliografía y comunicación; cualquier uso clínico requiere salvaguardas y revisión."
+        ],
+        [
+          "F",
+          "Tierra segura",
+          "Fuentes y educación; las recomendaciones de seguridad corresponden a especialistas."
+        ]
+      ],
+      "faqTitle": "Antes de empezar",
+      "faq": [
+        [
+          "¿Tengo que saber programar?",
+          "No. Leer críticamente, traducir, documentar, revisar accesibilidad y comprobar fuentes son aportes útiles. Las fichas indican las herramientas necesarias."
+        ],
+        [
+          "¿Esto cuenta para mis estudios?",
+          "Puede ayudarte a construir un portafolio de contribuciones públicas. Créditos académicos, certificados y reconocimiento deben acordarse con tu institución; no están garantizados."
+        ],
+        [
+          "¿Hay una persona mentora para cada tarea?",
+          "No podemos garantizar disponibilidad. Pide una persona revisora antes de ampliar el trabajo. Mientras tanto, usa las fichas como ejercicios autónomos con fuentes públicas."
+        ],
+        [
+          "¿Puedo usar IA?",
+          "Sí, como apoyo, si explicas en qué la usaste y verificas los resultados. No introduzcas datos personales o privados y no presentes referencias inventadas."
+        ],
+        [
+          "¿Puedo reportar una emergencia aquí?",
+          "No. No publiques casos personales ni solicitudes urgentes en issues, pull requests o Discord. Usa los servicios oficiales de tu localidad."
+        ]
+      ],
+      "footer": "Una propuesta de colaboración científica remota. Hecha para aprender, aportar y revisar en comunidad.",
+      "updatedLabel": "Revisión editorial",
+      "date": "24 oct 2026",
+      "print": "Imprimir / guardar PDF",
+      "downloadPlan": "Plan público (.md)",
+      "downloadGuide": "Guía de tareas (.md)",
+      "repo": "Repositorio",
+      "contribute": "Cómo contribuir",
+      "credits": "Contenido CC BY-SA 4.0 · Conexión RedJIV. Con el apoyo de Creative Commons Venezuela.",
+      "artCredit": "Ilustración vectorial original con asistencia de IA. La ilustración de Creative Commons Venezuela conservada en el repositorio se acredita por separado en LICENSE.md.",
+      "guideTitle": "Tu guía para la primera contribución",
+      "guideIntro": "Fichas para preparar un primer borrador, con alcance, criterios de revisión y fuentes. Son propuestas educativas; confirma prioridad y revisión con la comunidad antes de ampliar el trabajo.",
+      "back": "Volver a las tareas",
+      "tools": "Necesitas",
+      "sources": "Puntos de partida",
+      "submission": "Al compartir tu borrador",
+      "submissionItems": [
+        "Un resumen de qué hiciste y para quién puede servir.",
+        "El archivo o enlace, sin datos personales.",
+        "Fuentes consultadas y fecha de consulta.",
+        "Pasos para revisar o reproducir el resultado.",
+        "Limitaciones, dudas y apoyos de IA utilizados."
+      ],
+      "guideContact": "Para sumarte o confirmar revisión:",
+      "guidePlan": "Plan público de la propuesta",
+      "resultSingular": "tarea disponible",
+      "starterLabel": "Plantilla o ejemplo para empezar"
+    },
+    "en": {
+      "title": "Your first scientific contribution starts here.",
+      "description": "A starting point for students: small tasks, public data and work others can review. Conexión RedJIV, a proposal for remote scientific collaboration.",
+      "nav": {
+        "tasks": "Explore tasks",
+        "start": "Get started",
+        "resources": "Resources",
+        "plan": "The plan",
+        "guide": "Student guide",
+        "menu": "Menu",
+        "label": "Main navigation",
+        "language": "Language",
+        "skip": "Skip to content"
+      },
+      "eyebrow": "Open science · From wherever you are",
+      "heroLead": "You do not need a paper, coding skills or all the answers. Start with a small task and share something another person can check.",
+      "heroPrimary": "Find your first task",
+      "heroSecondary": "Read the contribution guide",
+      "heroArt": "A scientific network connected around a globe.",
+      "proposal": "Open community proposal",
+      "statusText": "The tasks on this page are proposals for learning and contributing. Assignment, review and scheduling must be agreed with the community; no launch is confirmed.",
+      "emergency": "This is not an emergency service.",
+      "emergencyMore": "For urgent assistance, use your local official channels. Our work is remote and uses public information.",
+      "quickTitle": "Have an hour?",
+      "quickBody": "You can check a source, improve an explanation or reproduce an example. You do not need to commit to a whole project.",
+      "quickLink": "See 60-minute tasks",
+      "facts": [
+        [
+          "60–120 min",
+          "for a first draft"
+        ],
+        [
+          "6 routes",
+          "with concrete deliverables"
+        ],
+        [
+          "0 travel",
+          "remote collaboration"
+        ]
+      ],
+      "tasksTitle": "A small task. A concrete result.",
+      "tasksIntro": "Choose by interest and time. Every task is suitable for getting started; none requires personal data or field work.",
+      "filterSkill": "I am interested in",
+      "filterTime": "Time available",
+      "skills": {
+        "all": "Everything",
+        "data": "Data and maps",
+        "writing": "Reading and writing",
+        "code": "Code and reproducibility",
+        "design": "Design and accessibility"
+      },
+      "times": {
+        "all": "Up to 2 hours",
+        "60": "Up to 1 hour"
+      },
+      "reset": "Show all",
+      "result": "tasks available",
+      "empty": "No tasks match that combination. Try another option or show all.",
+      "deliverable": "You will deliver",
+      "done": "Ready for review when…",
+      "scope": "Keep it within scope",
+      "details": "See scope and review criteria",
+      "choose": "Prepare my introduction",
+      "brief": "Read the full brief",
+      "minutes": "min",
+      "beginner": "A place to start",
+      "proposed": "Proposed · confirm before expanding",
+      "startTitle": "From interest to a first draft.",
+      "startIntro": "You can read, practise and prepare a public-data example independently. Before investing more time, confirm the task is still useful and someone can review it.",
+      "steps": [
+        [
+          "Choose a task",
+          "Read its brief. Check the scope, expected result and what is excluded. You can start without prior experience."
+        ],
+        [
+          "Introduce yourself and confirm",
+          "Share the task and your availability on Discord or open a GitHub proposal. Ask to confirm priority and find a reviewer; do not publish personal data."
+        ],
+        [
+          "Share a reviewable draft",
+          "Include your result, sources and dates, how to check it and what you still do not know. An honest draft is a useful contribution."
+        ]
+      ],
+      "introLabel": "A message to get started",
+      "introHelp": "Edit this text and share it on Discord. This page does not send or save it. If the invitation does not work, use a GitHub proposal.",
+      "introTemplate": "Hi, I am a student and would like to contribute to: {task}.\nI can offer [hours per week] for [period].\nMy first draft would be: [deliverable].\nIs this task still useful? Is someone available to review it?\nI will use public information only, without personal data.",
+      "defaultTask": "[task name]",
+      "copy": "Copy message",
+      "copied": "Message copied.",
+      "copyError": "Could not copy. Select the text and copy it manually.",
+      "prepared": "Message prepared for:",
+      "discord": "Join the Discord",
+      "githubProposal": "Propose on GitHub",
+      "noGithub": "No GitHub account? Prepare the same draft as a document and agree on delivery through Discord.",
+      "qualityTitle": "Make your work useful to the next person.",
+      "qualityIntro": "A contribution is reviewed for clarity, verifiability and care, rather than how ambitious it sounds.",
+      "quality": [
+        [
+          "Sources and dates",
+          "Link to the origin of every claim and record when you consulted it. Say when you could not verify something."
+        ],
+        [
+          "A reviewable result",
+          "Share the file, link or change and steps to check it. Explain its limits."
+        ],
+        [
+          "Fair credit",
+          "Record what each person contributed. Authorship and order must reflect contributions and be agreed; first authorship, a DOI, mentorship and prizes are not guaranteed."
+        ],
+        [
+          "Privacy from the start",
+          "Exclude victims’ names, private contacts, clinical records, children’s data and locations of vulnerable people."
+        ]
+      ],
+      "resourcesTitle": "Start with institutional sources.",
+      "resourcesIntro": "These are starting points, not endorsed services or a guarantee of availability. Check dates, scope and information at the original source before acting.",
+      "resourceNote": "Citizen services whose identity and data practices were unverified have been removed from the public directory. We do not request or host registries of people.",
+      "planTitle": "The purpose, clearly stated.",
+      "planIntro": "Conexión RedJIV is a proposal connected to the Network of Young Venezuelan Researchers (RedJIV), a group of ACFIMAN. It aims to connect students and researchers with useful, remote scientific contributions.",
+      "planParagraphs": [
+        "The original context was the response to the June 2026 earthquakes in Venezuela. This page does not publish casualty counts or real-time alerts. Consult institutional sources for current information.",
+        "The proposed model is distributed work with small, reviewable deliverables. Meetings, review availability and any follow-up work must be confirmed with the community. This page confirms neither a start date nor funding.",
+        "The network can contribute documentation, sources, reproducible code and open-data analysis. It does not provide rescue, diagnoses, clinical care or building-safety assessments. Health, water and hazard materials require specialist review before any operational use."
+      ],
+      "tracksTitle": "Six routes to orient the work",
+      "tracks": [
+        [
+          "A",
+          "The backbone",
+          "Documentation, organisation and contribution."
+        ],
+        [
+          "B",
+          "Maps and needs",
+          "Learn from existing mapping, without creating registries of people."
+        ],
+        [
+          "C",
+          "Clean water",
+          "Review public sources; practical guidance requires expert review."
+        ],
+        [
+          "D",
+          "Ecosystem and data",
+          "Verify sources and make reproducible analyses."
+        ],
+        [
+          "E",
+          "Health and wellbeing",
+          "Bibliography and communication; clinical use requires safeguards and review."
+        ],
+        [
+          "F",
+          "Safe ground",
+          "Sources and education; safety recommendations belong with specialists."
+        ]
+      ],
+      "faqTitle": "Before you start",
+      "faq": [
+        [
+          "Do I need to code?",
+          "No. Critical reading, translation, documentation, accessibility reviews and source checking are useful contributions. Each brief lists the tools needed."
+        ],
+        [
+          "Will this count toward my studies?",
+          "It can help you build a portfolio of public contributions. Academic credit, certificates and recognition must be agreed with your institution and are not guaranteed."
+        ],
+        [
+          "Is a mentor assigned to every task?",
+          "Availability is not guaranteed. Ask for a reviewer before expanding the work. In the meantime, use the briefs as independent exercises with public sources."
+        ],
+        [
+          "Can I use AI?",
+          "Yes, as support, if you explain how you used it and verify the results. Do not enter personal or private data or submit invented references."
+        ],
+        [
+          "Can I report an emergency here?",
+          "No. Do not post personal cases or urgent requests in issues, pull requests or Discord. Use local official services."
+        ]
+      ],
+      "footer": "A proposal for remote scientific collaboration. Made to learn, contribute and review together.",
+      "updatedLabel": "Editorial review",
+      "date": "24 Oct 2026",
+      "print": "Print / save PDF",
+      "downloadPlan": "Public plan (.md)",
+      "downloadGuide": "Task guide (.md)",
+      "repo": "Repository",
+      "contribute": "How to contribute",
+      "credits": "Content CC BY-SA 4.0 · Conexión RedJIV. Supported by Creative Commons Venezuela.",
+      "artCredit": "Original vector illustration made with AI assistance. The Creative Commons Venezuela illustration retained in the repository is credited separately in LICENSE.md.",
+      "guideTitle": "Your guide to a first contribution",
+      "guideIntro": "Briefs for a first draft, with scope, review criteria and sources. These are educational proposals; confirm priority and review availability with the community before expanding the work.",
+      "back": "Back to tasks",
+      "tools": "You need",
+      "sources": "Starting points",
+      "submission": "When sharing your draft",
+      "submissionItems": [
+        "A summary of what you did and who could use it.",
+        "The file or link, without personal data.",
+        "Sources and consultation dates.",
+        "Steps to check or reproduce the result.",
+        "Limitations, questions and any AI assistance used."
+      ],
+      "guideContact": "To join or confirm review:",
+      "guidePlan": "Public proposal plan",
+      "resultSingular": "task available",
+      "starterLabel": "Starter template or example"
+    }
+  },
+  "tasks": [
+    {
+      "id": "fuentes",
+      "track": "D",
+      "minutes": 60,
+      "skills": [
+        "data",
+        "writing"
+      ],
+      "sourceIds": [
+        "icrc",
+        "unicef"
+      ],
+      "es": {
+        "title": "Comprueba tres fuentes públicas",
+        "summary": "Convierte una lista de enlaces en una tabla que otra persona pueda verificar.",
+        "deliverable": "Una tabla de 3 fuentes: institución, URL, propósito, fecha de consulta y límites.",
+        "tools": "Un navegador y una hoja de cálculo o archivo Markdown.",
+        "checks": [
+          "Cada enlace lleva al dominio institucional esperado.",
+          "Cada fila distingue lo comprobado de lo que sigue pendiente.",
+          "No hay datos personales ni afirmaciones de disponibilidad de servicios sin respaldo."
+        ],
+        "scope": "No contactes a personas afectadas ni pruebes formularios con datos reales. Una página accesible no demuestra que un servicio esté operativo."
+      },
+      "en": {
+        "title": "Check three public sources",
+        "summary": "Turn a list of links into a table another person can verify.",
+        "deliverable": "A 3-source table: institution, URL, purpose, consultation date and limitations.",
+        "tools": "A browser and a spreadsheet or Markdown file.",
+        "checks": [
+          "Every link leads to the expected institutional domain.",
+          "Each row separates what was checked from what remains uncertain.",
+          "No personal data or unsupported claims about service availability are included."
+        ],
+        "scope": "Do not contact affected people or test forms with real data. A reachable page does not prove a service is operational."
+      },
+      "starter": "examples/source-check/README.md"
+    },
+    {
+      "id": "mapa",
+      "track": "B",
+      "minutes": 120,
+      "skills": [
+        "data",
+        "design"
+      ],
+      "sourceIds": [
+        "hot"
+      ],
+      "es": {
+        "title": "Aprende a leer una tarea de mapeo",
+        "summary": "Explora el flujo de HOT y explica cómo empezar sin duplicar esfuerzos.",
+        "deliverable": "Una nota de 1 página con enlace a un proyecto público, requisitos y 3 dudas de principiante.",
+        "tools": "Un navegador. Para esta nota no necesitas una cuenta ni editar un mapa.",
+        "checks": [
+          "Se indica el estado del proyecto y la fecha consultada, sin asumir que acepta contribuciones.",
+          "Se enlazan la formación y las instrucciones del proyecto.",
+          "Se explica que cualquier edición posterior debe seguir el proceso de revisión de HOT."
+        ],
+        "scope": "Solo documentación de incorporación. No publiques ubicaciones de personas, no infieras necesidades de ayuda y no edites mapas antes de completar la formación requerida."
+      },
+      "en": {
+        "title": "Learn to read a mapping task",
+        "summary": "Explore HOT’s workflow and explain how to start without duplicating effort.",
+        "deliverable": "A 1-page note with a public project link, prerequisites and 3 beginner questions.",
+        "tools": "A browser. This note does not require an account or map editing.",
+        "checks": [
+          "The project status and consultation date are recorded, without assuming contributions are open.",
+          "Project training and instructions are linked.",
+          "The note explains that later edits must follow HOT’s review process."
+        ],
+        "scope": "Onboarding documentation only. Do not publish people’s locations, infer aid needs or edit maps before completing required training."
+      }
+    },
+    {
+      "id": "agua",
+      "track": "C",
+      "minutes": 60,
+      "skills": [
+        "writing",
+        "data"
+      ],
+      "sourceIds": [
+        "icrc",
+        "unicef"
+      ],
+      "es": {
+        "title": "Ordena bibliografía sobre agua segura",
+        "summary": "Ayuda a una persona revisora a encontrar y comparar documentos institucionales.",
+        "deliverable": "Una bibliografía anotada de 3 documentos: fecha, público objetivo, alcance y enlace.",
+        "tools": "Un navegador y un documento de texto.",
+        "checks": [
+          "Cada documento tiene autor institucional, título, fecha o indicación de fecha desconocida y URL.",
+          "Las anotaciones distinguen contexto general de instrucciones técnicas.",
+          "El borrador dice explícitamente que no es una guía para uso en terreno."
+        ],
+        "scope": "No recomiendes dosis, tratamientos ni procedimientos. No adaptes instrucciones sanitarias para su distribución; cualquier material práctico necesita revisión especializada."
+      },
+      "en": {
+        "title": "Organise safe-water references",
+        "summary": "Help a reviewer find and compare institutional documents.",
+        "deliverable": "An annotated bibliography of 3 documents: date, audience, scope and link.",
+        "tools": "A browser and a text document.",
+        "checks": [
+          "Each document has an institutional author, title, date or unknown-date note, and URL.",
+          "Annotations distinguish general context from technical instructions.",
+          "The draft explicitly states that it is not guidance for field use."
+        ],
+        "scope": "Do not recommend doses, treatments or procedures. Do not adapt health instructions for distribution; practical materials require specialist review."
+      }
+    },
+    {
+      "id": "accesibilidad",
+      "track": "A",
+      "minutes": 60,
+      "skills": [
+        "design",
+        "writing"
+      ],
+      "sourceIds": [],
+      "es": {
+        "title": "Revisa una página con el teclado",
+        "summary": "Encuentra una barrera concreta para alguien que empieza.",
+        "deliverable": "Un reporte con página, pasos para reproducir, resultado esperado y resultado observado.",
+        "tools": "Un navegador y teclado. No necesitas herramientas de pago.",
+        "checks": [
+          "Se puede repetir el recorrido con Tab, Shift+Tab y Enter.",
+          "Se comprueban foco visible, enlaces descriptivos y uso al 200 % de zoom.",
+          "Se documenta una observación concreta sin afirmar que es una auditoría completa."
+        ],
+        "scope": "Revisa únicamente contenido público. No captures nombres, mensajes privados o datos de otras personas."
+      },
+      "en": {
+        "title": "Review a page using your keyboard",
+        "summary": "Find one concrete barrier for someone getting started.",
+        "deliverable": "A report with the page, reproduction steps, expected result and observed result.",
+        "tools": "A browser and a keyboard. No paid tools required.",
+        "checks": [
+          "The path can be repeated with Tab, Shift+Tab and Enter.",
+          "Visible focus, descriptive links and use at 200% zoom are checked.",
+          "One concrete observation is documented without claiming a full audit."
+        ],
+        "scope": "Review public content only. Do not capture names, private messages or other people’s data."
+      }
+    },
+    {
+      "id": "reproducibilidad",
+      "track": "D",
+      "minutes": 120,
+      "skills": [
+        "code",
+        "data"
+      ],
+      "sourceIds": [],
+      "es": {
+        "title": "Reproduce una tabla con datos sintéticos",
+        "summary": "Practica un análisis pequeño sin manejar datos de personas.",
+        "deliverable": "Un cambio al ejemplo de 5 filas sintéticas, con totales esperados y observados, cálculo manual y comando de ejecución.",
+        "tools": "Python 3 o JavaScript con Node.js y un editor de texto.",
+        "checks": [
+          "Las filas están marcadas como sintéticas y no contienen nombres, contactos ni ubicaciones.",
+          "Un único comando reproduce el resultado y documenta la versión usada.",
+          "Los totales se contrastan con un cálculo manual y se explican los límites del ejemplo."
+        ],
+        "scope": "Es un ejercicio de reproducibilidad, no un diagnóstico de necesidades reales. No recolectes ni extraigas datos de víctimas o pacientes."
+      },
+      "en": {
+        "title": "Reproduce a table with synthetic data",
+        "summary": "Practise a small analysis without handling data about people.",
+        "deliverable": "A change to the 5-row synthetic example, with expected and observed totals, a manual check and a run command.",
+        "tools": "Python 3 or JavaScript with Node.js, and a text editor.",
+        "checks": [
+          "Rows are labelled synthetic and contain no names, contacts or locations.",
+          "One command reproduces the result and the runtime version is documented.",
+          "Totals are checked by hand and the example’s limits are explained."
+        ],
+        "scope": "A reproducibility exercise, not an assessment of real needs. Do not collect or scrape victim or patient data."
+      },
+      "starter": "examples/synthetic-table/README.md"
+    },
+    {
+      "id": "lenguaje-claro",
+      "track": "A",
+      "minutes": 60,
+      "skills": [
+        "writing",
+        "design"
+      ],
+      "sourceIds": [],
+      "es": {
+        "title": "Haz más clara una explicación",
+        "summary": "Ayuda a que otra persona entienda qué hacer sin conocer la jerga.",
+        "deliverable": "Una propuesta antes/después de 150–250 palabras y un glosario de 5 términos, en español o inglés.",
+        "tools": "Un editor de texto y una sección pública de este repositorio.",
+        "checks": [
+          "La propuesta conserva el significado y no agrega hechos ni promesas.",
+          "Se explican 5 términos y se enlaza el texto original.",
+          "Las dudas de traducción o contenido se señalan para revisión."
+        ],
+        "scope": "No traduzcas instrucciones clínicas ni de seguridad para uso operativo. Elige documentación de incorporación o colaboración."
+      },
+      "en": {
+        "title": "Make an explanation clearer",
+        "summary": "Help someone understand the next step without knowing the jargon.",
+        "deliverable": "A 150–250-word before/after proposal and a 5-term glossary, in Spanish or English.",
+        "tools": "A text editor and a public section of this repository.",
+        "checks": [
+          "The proposal preserves meaning without adding facts or promises.",
+          "Five terms are explained and the original text is linked.",
+          "Translation or content questions are marked for review."
+        ],
+        "scope": "Do not translate clinical or safety instructions for operational use. Choose onboarding or collaboration documentation."
+      }
+    }
+  ]
+}

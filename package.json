@@ -1,0 +1,14 @@
+{
+  "name": "conexion-redjiv",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A bilingual, accessible student contribution hub for Conexión RedJIV",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check",
+    "test": "node --test",
+    "verify": "npm run check && npm test"
+  }
+}

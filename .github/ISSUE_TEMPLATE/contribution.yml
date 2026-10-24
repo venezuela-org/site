@@ -1,0 +1,42 @@
+name: "Proponer una contribución / Propose a contribution"
+description: "Una tarea pequeña, un borrador o una idea para estudiantes / A small task, draft or student idea"
+title: "[Contribución / Contribution]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No publiques datos personales, contactos privados, casos de víctimas ni solicitudes urgentes. / Do not post personal data, private contacts, victim cases or urgent requests.
+        Las tareas son propuestas; prioridad y disponibilidad de revisión deben confirmarse. / Tasks are proposals; priority and review availability need confirmation.
+  - type: input
+    id: task
+    attributes:
+      label: "Tarea o ruta / Task or route"
+      description: "Enlace a una ficha o descripción breve / Link a brief or describe it briefly"
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: "Primer resultado / First result"
+      description: "Qué entregarías, para quién sirve y qué queda fuera / What you would deliver, who it helps and what is excluded"
+    validations:
+      required: true
+  - type: input
+    id: availability
+    attributes:
+      label: "Tiempo aproximado, opcional / Approximate time, optional"
+      placeholder: "Ej. 1–2 horas esta semana / E.g. 1–2 hours this week"
+  - type: textarea
+    id: review
+    attributes:
+      label: "Revisión y dudas / Review and questions"
+      description: "Qué necesitas confirmar antes de ampliar el trabajo / What needs confirmation before expanding the work"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "Privacidad / Privacy"
+      options:
+        - label: "Esta propuesta no contiene datos personales ni casos sensibles. / This proposal contains no personal data or sensitive cases."
+          required: true

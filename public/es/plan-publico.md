@@ -1,78 +1,65 @@
-# Conexión RedJIV · Plan público
+# Conexión RedJIV · Plan público de la propuesta
 
-Documento público y seguro. No incluye nombres de personas dentro de Venezuela, ubicaciones, ni detalles operativos internos.
+Revisión editorial: 2026-10-24
 
-## Qué es
+> Esto no es un servicio de emergencia. Para asistencia urgente, usa los canales oficiales de tu localidad. Aquí trabajamos a distancia con información pública.
 
-La reacción de la Red de Jóvenes Investigadores de Venezuela (RedJIV), un grupo de la Academia de Ciencias Físicas, Matemáticas y Naturales (ACFIMAN), con miembros dentro y fuera del país, a los terremotos del 24 de junio de 2026. Ponemos talento y conocimiento a producir cosas útiles a distancia, canalizando todo a través de organismos ya establecidos. No hacemos rescate ni improvisamos en la zona.
+## Propuesta abierta a la comunidad
 
-## Perfil bajo por diseño
+Las tareas de esta página son propuestas para aprender y contribuir. La asignación, la revisión y el calendario se acuerdan con la comunidad; no hay un lanzamiento confirmado.
 
-No buscamos figurar. El crédito es de quien hace el trabajo. Trabajar en silencio también protege a quienes están dentro del país.
+Conexión RedJIV es una propuesta vinculada a la Red de Jóvenes Investigadores de Venezuela (RedJIV), un grupo de la ACFIMAN. Busca conectar estudiantes e investigadores con contribuciones científicas remotas de utilidad pública.
 
-## De dónde viene
+El contexto original fue la respuesta a los terremotos de Venezuela de junio de 2026. Esta página no publica balances de víctimas ni alertas en tiempo real. Para información actual, consulta las fuentes institucionales.
 
-Conexión RedJIV no empieza de cero. Nace del mismo espíritu de CoAfina y del hackathon de datos abiertos de LA-CoNGA: convertir datos abiertos en soluciones que transformen realidades, resolviendo retos científicos y educativos en comunidad. Esta es su edición de emergencia, el mismo modelo puesto al servicio de la respuesta y la reconstrucción.
+El modelo propuesto es un esfuerzo distribuido con entregables pequeños y revisables. Los encuentros, la disponibilidad de revisión y cualquier trabajo posterior se confirman con la comunidad. No hay una fecha de inicio ni financiación confirmadas en esta página.
 
-## El modelo: un hackathon de largo plazo
+La red puede aportar documentación, fuentes, código reproducible y análisis de datos abiertos. No realiza rescate, diagnósticos, atención clínica ni evaluaciones de seguridad de edificios. Los materiales de salud, agua y riesgo necesitan revisión especializada antes de cualquier uso operativo.
 
-Corremos el esfuerzo como una edición de emergencia de CoAfina, un hackathon de datos abiertos de América Latina, adaptado: no dura un fin de semana, dura hasta ayudar a reconstruir. Y es distribuido: nadie viaja; nos reunimos en línea, y el Discord es el punto de encuentro, con canales por grupo y por track. Los encuentros quincenales de la red son los sprints, contados desde la semana 1 del arranque, previsto para agosto de 2026 y con fechas por acordar en la red.
+## Seis rutas para orientar el trabajo
 
-## Los tracks
+- **A La base**: Documentación, organización y contribución.
+- **B Mapas y necesidades**: Aprender del mapeo existente, sin crear registros de personas.
+- **C Agua limpia**: Revisar fuentes públicas; cualquier guía práctica requiere revisión experta.
+- **D Ecosistema y datos**: Verificar fuentes y hacer análisis reproducibles.
+- **E Salud y ánimo**: Bibliografía y comunicación; cualquier uso clínico requiere salvaguardas y revisión.
+- **F Tierra segura**: Fuentes y educación; las recomendaciones de seguridad corresponden a especialistas.
 
-- A La base: une, coordina y sostiene a los demás.
-- B Mapa de necesidades y accesos: ver dónde falta ayuda y cómo llegar, sumándonos al mapeo que ya existe.
-- C Agua limpia: guía de agua segura y saneamiento para refugios.
-- D Ecosistema y datos: ordenar, verificar y conectar las plataformas que ya existen, sin duplicar datos sensibles.
-- E Salud y ánimo: cuidado de la salud y apoyo psicosocial.
-- F Tierra segura: riesgo de réplicas y criterios de sitio seguro.
+## Cómo empezar
 
-## Arranque realista
+1. **Elige una tarea.** Abre su ficha. Comprueba el alcance, el resultado esperado y qué queda fuera. Puedes empezar sin experiencia previa.
 
-Empezamos con A, B, C y D, en ese orden: las letras siguen el orden de arranque. El track E arranca cuando estén listas las salvaguardas de privacidad y ética. El track F arranca si los especialistas de geociencias confirman disponibilidad y datos. Cada track tiene un primer entregable que se puede hacer a distancia.
+2. **Preséntate y confirma.** Comparte la tarea y tu disponibilidad por Discord o abre una propuesta en GitHub. Pide confirmar prioridad y una persona revisora; no publiques datos personales.
 
-## Qué entregaremos en 30 días
+3. **Comparte un borrador revisable.** Incluye el resultado, tus fuentes y fechas, cómo comprobarlo y lo que todavía no sabes. Un borrador honesto también aporta.
 
-- Una base viva de coordinación y datos.
-- Una guía de agua segura lista para imprimir y repartir.
-- Un primer mapa reproducible de vacíos de cobertura, hecho con datos abiertos.
+Para sumarte o confirmar revisión:
 
-## El incentivo
+- Discord: https://discord.gg/yWhUUvrhpj
+- GitHub: https://github.com/venezuela-org/site/issues
+- Web: https://venezuela-org.github.io/site/
+- Guía para estudiantes: https://venezuela-org.github.io/site/guia/
 
-Más que un premio: que el esfuerzo cuente y no se apague. Salir como primer autor, tener mentoría y recursos, y darle continuidad al trabajo. El reconocimiento en efectivo es secundario y va atado a entregables, no a inscribirse.
+## Que tu trabajo sirva a quien viene después.
 
-## Cómo sumarte
+- **Fuentes y fechas**: Enlaza el origen de cada dato e indica cuándo lo consultaste. Si no pudiste verificarlo, dilo.
+- **Algo que se pueda revisar**: Comparte el archivo, enlace o cambio y los pasos para comprobarlo. Explica sus límites.
+- **Crédito justo**: Documenta qué aportó cada persona. La autoría y el orden se acuerdan según las contribuciones; no se garantiza primer autor, DOI, mentoría ni premios.
+- **Privacidad desde el inicio**: No incluyas nombres de víctimas, contactos privados, historias clínicas, datos de menores ni ubicaciones de personas vulnerables.
 
-Escribe por el canal de la comunidad (Discord) y dinos en qué track puedes aportar y cuántas horas. Cada quien entra donde de verdad puede ayudar.
+## Recursos
 
-## Cómo apoyar
+- [CICR · Venezuela](https://www.icrc.org/es/donde-trabajamos/venezuela): Información institucional y vías de contacto para asistencia y restablecimiento de contacto familiar.
+- [UNICEF · Venezuela](https://www.unicef.org/venezuela/): Información institucional sobre derechos y protección de la niñez.
+- [HOT · Tasking Manager](https://tasks.hotosm.org/): Proyectos de mapeo humanitario. Comprueba cuáles están activos y sigue su formación e instrucciones.
+- [USGS · Terremotos](https://earthquake.usgs.gov/earthquakes/): Información sísmica con fecha y fuentes. No sustituye las indicaciones de las autoridades locales.
 
-Ayuda que suma: créditos de cómputo, mentoría científica y técnica, alianzas institucionales y difusión responsable. Todo se canaliza con perfil bajo y a través de organismos establecidos.
-
-## Lo que nos hace distintos
-
-- Perfil bajo por diseño. El crédito es de quien hace el trabajo, y el silencio también protege a quien está dentro del país.
-- No duplicar, conectar. No hacemos otra plataforma más; ordenamos, verificamos y conectamos lo que ya existe.
-- Utilidad antes que ruido. Entregables que sirven, no anuncios.
-- Abierto y verificable. Datos abiertos, código con DOI y fuentes citadas.
-- Autoría para el joven investigador. Primer autor, con mentoría y continuidad.
-- A través de organismos establecidos. OCHA, UNICEF, CICR y protección civil. No improvisamos en la zona.
-
-## Lo que no haremos
-
-- No improvisamos en la zona del desastre.
-- No publicamos datos de pacientes ni de víctimas.
-- No exponemos la ubicación de personas vulnerables.
-- No exponemos a los miembros que están dentro de Venezuela.
-
-## Ecosistema digital de emergencia: no duplicar, conectar mejor
-
-Ya existen varias plataformas ciudadanas para búsqueda de personas, hospitales, heridos, reunificación de niños, ayuda, apoyo psicológico, mapas de daños e información en tiempo real. Nuestra contribución no será crear ruido ni duplicar registros sensibles, sino ayudar a ordenar, verificar, documentar, conectar y proteger mejor ese ecosistema.
-
-Este proyecto no reemplaza a los servicios de emergencia, los hospitales, Protección Civil ni los registros oficiales. Para una emergencia, usa siempre los canales oficiales. Empieza por los canales establecidos: el CICR y la Cruz Roja para reconectar familiares (familylinks.icrc.org), y UNICEF y OCHA para niñez y coordinación.
-
-Las plataformas ciudadanas son de terceros, no oficiales y no verificadas por nosotros. En desastres circulan sitios falsos que imitan nombres reales, así que verifica el dominio antes de entrar y no compartas datos sensibles si no estás seguro. No copiamos ni reproducimos nombres, cédulas, fotos, ubicaciones de hospitales ni datos de menores. Para la reunificación de niños hace falta verificación presencial y procedimientos de protección infantil.
+Estas son puertas de entrada, no una lista de servicios avalados ni una garantía de disponibilidad. Verifica la fecha, el alcance y la información en el sitio de origen antes de actuar.
 
 ## Licencia y créditos
 
-Contenido bajo CC BY-SA 4.0, atribuido a Conexión RedJIV, con el apoyo de Creative Commons Venezuela. Las ilustraciones son originales, hechas con asistencia de IA; no se usan imágenes de terceros.
+Contenido CC BY-SA 4.0 · Conexión RedJIV. Con el apoyo de Creative Commons Venezuela.
+
+Ilustración vectorial original con asistencia de IA. La ilustración de Creative Commons Venezuela conservada en el repositorio se acredita por separado en LICENSE.md.
+
+https://creativecommons.org/licenses/by-sa/4.0/

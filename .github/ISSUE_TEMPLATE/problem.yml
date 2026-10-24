@@ -1,0 +1,29 @@
+name: "Reportar una barrera / Report a barrier"
+description: "Un enlace, texto o comportamiento que impide contribuir / A link, text or behaviour blocking contribution"
+title: "[Problema / Problem]: "
+body:
+  - type: markdown
+    attributes:
+      value: "No adjuntes datos personales ni capturas de conversaciones privadas. / Do not attach personal data or private-conversation screenshots."
+  - type: input
+    id: page
+    attributes:
+      label: "Página e idioma / Page and language"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Pasos para reproducir / Steps to reproduce"
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: "Qué esperabas y qué ocurrió / Expected and observed result"
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: "Navegador y dispositivo, opcional / Browser and device, optional"
